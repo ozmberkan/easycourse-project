@@ -11,7 +11,7 @@ export default function Search() {
         <h1 className='text-4xl font-bold text-primary-color font-montserrat'>İstediğin eğitim dalında ki eğitmenini bul! </h1>
         <span className='text-lg font-medium text-black text-opacity-50 font-montserrat'>Aşağıdaki alandan istediğin eğitmenin ismini girerek profiline gidebilir, yorumlarını ve puanını görüntüleyebilirsin.</span>
         <div className='flex justify-center items-center relative w-full'>
-          <input type="text" placeholder='Ne öğrenmek istersin?' className='w-full h-20 z-10 rounded-xl border-[3px] border-primary-color text-black text-opacity-50 px-7 text-[30px] font-medium font-montserrat focus:outline-none' />
+          <input type="text" placeholder='Eğitmen ara...' className='w-full h-20 z-10 rounded-xl border-[3px] border-primary-color text-black text-opacity-50 px-7 text-[25px] font-medium font-montserrat focus:outline-none' />
           <IoIosSearch size={50} className='text-primary-color absolute right-5 top-35 z-20 cursor-pointer'/>
         </div>
       </div>

@@ -5,39 +5,43 @@ import huawei from '/src/assets/huawei.jpg';
 
 export default function Footer() {
   return (
-    <div className='w-full h-screen  flex flex-col justify-end items-center '>
-      <div className='bg-white h-[500px] w-full flex flex-row justify-start items-center px-12'>
-        <div className='w-[25%] h-full px-4 py-4 bg-green-500'>
-          <h1 className='font-damion text-[50px]'>easycourse</h1>
-          <div className='flex flex-col gap-y-4 '>
-            <img src={appStore} alt=""className=' cursor-pointer w-44 h-12' />
-            <img src={playStore} alt="" className='cursor-pointer w-44 h-12'/>
-            <img src={huawei} alt="" className='cursor-pointer w-44 h-12'/>
-          </div>
+    <div className='bg-white w-full h-[350px] grid gap-x-12 grid-cols-4 items-center px-44'>
+      <div className=' w-full h-full'>
+        <h1 className='font-damion text-[50px] text-primary-color'>easycourse</h1>
+        <div className='flex flex-col gap-y-6'>
+          <img src={appStore} alt="" className='w-[170px]' />
+          <img src={playStore} alt="" className='w-[170px]' />
+          <img src={huawei} alt="" className='w-[170px]' />
         </div>
-        <div className='w-[25%]  h-full px-4 py-24 bg-yellow-500'>
-          <ul className='flex flex-col gap-y-8 justify-center items-start'>
-            <li className='text-xl'>Hakkımızda</li>
-            <li className='text-xl'>İletişim</li>
-            <li className='text-xl'>Yardım</li>
-            <li className='text-xl'>Sosyal Sorumluluk Projeleri</li>
-            <li className='text-xl'>Teknoloji Eğitimleri</li>
+      </div>
+      <div className=' w-full h-full'>
+        <div className='w-full h-full'>
+          <ul className='flex flex-col gap-y-4 py-16'>
+            <li className='text-primary-color font-montserrat font-medium text-lg'>Hakkımızda</li>
+            <li className='text-primary-color font-montserrat font-medium text-lg'>Kariyer</li>
+            <li className='text-primary-color font-montserrat font-medium text-lg'>Teknoloji Kariyerleri</li>
+            <li className='text-primary-color font-montserrat font-medium text-lg'>letişim</li>
+            <li className='text-primary-color font-montserrat font-medium text-lg'>letişim</li>
           </ul>
         </div>
-        <div className='w-[25%]  h-full px-4 py-24 bg-yellow-500'>
-        <ul className='flex flex-col gap-y-8 justify-center items-start'>
-            <li className='text-xl'>Sıkça Sorulan Sorular</li>
-            <li className='text-xl'>Kişisel Verilerin Korunması</li>
-            <li className='text-xl'>Gizlilik Politikası</li>
-            <li className='text-xl'>Kullanım Koşulları</li>
-            <li className='text-xl'>Çerez Politikası</li>
+      </div>
+      <div className=' w-full h-full'>
+        <div className='w-full h-full'>
+          <ul className='flex flex-col gap-y-4 py-16'>
+            <li className='text-primary-color font-montserrat font-medium text-lg'>Sıkça Sorulan Sorular</li>
+            <li className='text-primary-color font-montserrat font-medium text-lg'>Kişisel Verilerin Korunması</li>
+            <li className='text-primary-color font-montserrat font-medium text-lg'>Çerez Politikası</li>
+            <li className='text-primary-color font-montserrat font-medium text-lg'>Gizlilik Politikası</li>
+            <li className='text-primary-color font-montserrat font-medium text-lg'>Kullanım Koşulları</li>
           </ul>
         </div>
-        <div className='w-[25%] h-full px-4 py-24 flex flex-col bg-yellow-500 '>
-        <button className='border-[2px] border-primary-color text-primary-color h-12 rounded-md mt-5 font-montserrat w-full' >Avantajlar</button>
-        <button className='border-[2px] border-primary-color text-primary-color h-12 rounded-md mt-5 font-montserrat w-full' >Avantajlar</button>
-        <button className='border-[2px] border-primary-color text-primary-color h-12 rounded-md mt-5 font-montserrat w-full' >Avantajlar</button>
-        <button className='border-[2px] border-primary-color text-primary-color h-12 rounded-md mt-5 font-montserrat w-full' >Avantajlar</button>
+      </div>
+      <div className=' w-full h-full'>
+        <div className='w-full h-full flex flex-col gap-y-4 py-16'> 
+        <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-full text-white'>Giriş Yap</button>
+        <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-full text-white'>Kayıt Ol</button>
+        <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-full text-white'>Ücretlendirme</button>
+        <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-full text-white'>Avantajlar</button>
         </div>
       </div>
     </div>

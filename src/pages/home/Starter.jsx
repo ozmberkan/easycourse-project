@@ -7,7 +7,7 @@ import homeIll from '/src/assets/homeill.png';
 export default function Starter() {
   return (
     <>
-    <div className='w-full h-[500px] bg-white rounded-xl mt-[150px] flex justify-start items-start shadow-xl' >
+    <div className='w-full h-[500px] bg-white rounded-xl mt-[100px] flex justify-start items-start shadow-xl' >
       <div className='w-[700px] h-full  flex justify-center items-center'>
         <img src={homeIll} alt="homeIll"/>
       </div>
