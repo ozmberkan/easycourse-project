@@ -6,6 +6,7 @@ import googleImg from '/src/assets/googleLogo.png'
 import facebookImg from '/src/assets/facebookLogo.png'
 
 
+
 export default function Login() {
 
   const [enabled, setEnabled] = useState(false);
@@ -19,6 +20,9 @@ export default function Login() {
       teacherRef.current.style.transition = 'all 0.5s';
     }
   }, [enabled]);
+
+  
+
   return (
 
 
@@ -35,9 +39,8 @@ export default function Login() {
                 </Switch>
               </div>
               <form className='flex justify-center items-center flex-col w-full mt-4 gap-y-4'>
-                <input type="email" placeholder='E-posta Giriniz...' className='w-full py-4 px-4 border-[2px] rounded-lg border-primary-color' />
-                <input type="password" placeholder='Parola Giriniz...' className='w-full py-4 px-4 border-[2px] rounded-lg border-primary-color' />
-                <input type="password" placeholder='Parola Tekrar Giriniz...' className='w-full py-4 px-4 border-[2px] rounded-lg border-primary-color' />
+                <input  type="email" placeholder='E-posta Giriniz...' className='w-full py-4 px-4 border-[2px] rounded-lg border-primary-color' />
+                <input  type="password" placeholder='Parola Giriniz...' className='w-full py-4 px-4 border-[2px] rounded-lg border-primary-color' />
                 <input ref={teacherRef} type="text" placeholder='Eğitmen kodunu Giriniz' className='w-full py-4 px-4 border-[2px] rounded-lg border-primary-color'/>
                 <div className='flex gap-x-2 w-full '>
                   <input type="checkbox" id='checkbox' name='checkbox' />
@@ -45,11 +48,11 @@ export default function Login() {
                 </div>
                 <button className='w-full py-4 bg-primary-color text-white rounded-lg font-montserrat font-bold' type='submit'>Giriş Yap</button>
                 <div className='w-full flex gap-x-4'>
-                  <a href="#" className='text-primary-color font-montserrat font-semibold border border-primary-color py-6 px-12 w-full  rounded-lg flex gap-x-4 text-sm'>
+                  <a href="#" className='text-primary-color font-montserrat font-semibold border border-primary-color py-6 px-12 w-full  rounded-lg flex gap-x-4 text-sm justify-center items-center'>
                     <img src={googleImg} alt=""  className='w-6'/>
                     Google ile Devam Et!
                     </a>
-                  <a href="#" className='text-primary-color font-montserrat font-semibold border border-primary-color py-6 px-12 w-full rounded-lg flex gap-x-4 text-sm'>
+                  <a href="#" className='text-primary-color font-montserrat font-semibold border border-primary-color py-6 px-12 w-full rounded-lg flex gap-x-4 text-sm justify-center items-center'>
                     <img src={facebookImg} alt="" className='w-6' />
                     Facebook ile Devam Et!
                     </a>

@@ -21,11 +21,11 @@ export default function Register() {
                 <input type="number" placeholder='Telefon Numarası Giriniz...' className='w-full py-4 px-4 border-[2px] rounded-lg border-primary-color'/>
                 <button className='w-full py-4 bg-primary-color text-white rounded-lg font-montserrat font-bold' type='submit'>Kayıt Ol</button>
                 <div className='w-full flex gap-x-4'>
-                  <a href="#" className='text-primary-color font-montserrat font-semibold border border-primary-color py-6 px-12 w-full  rounded-lg flex gap-x-4 text-sm'>
+                  <a href="#" className='text-primary-color font-montserrat font-semibold border border-primary-color py-6 px-12 w-full  rounded-lg flex gap-x-4 text-sm justify-center items-center'>
                     <img src={googleImg} alt=""  className='w-6'/>
                     Google ile Kayıt Ol!
                     </a>
-                  <a href="#" className='text-primary-color font-montserrat font-semibold border border-primary-color py-6 px-12 w-full rounded-lg flex gap-x-4 text-sm'>
+                  <a href="#" className='text-primary-color font-montserrat font-semibold border border-primary-color py-6 px-12 w-full rounded-lg flex gap-x-4 text-sm justify-center items-center'>
                     <img src={facebookImg} alt="" className='w-6' />
                     Facebook ile Kayıt Ol!
                     </a>
