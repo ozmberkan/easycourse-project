@@ -55,7 +55,7 @@ export default function () {
 
 
 
-    <div className='w-full h-screen bg-[url("src/assets/mainWallpaper.png")] bg-cover bg-center' >
+    <div className='w-full h-screen bg-[url("/src/assets/mainWallpaper.png")] bg-cover bg-center' >
       <div className='container mx-auto h-full'>
         <Header/>
         <Starter/>
