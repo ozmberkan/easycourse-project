@@ -6,7 +6,7 @@ import geometryTeacher from '/src/assets/geometryteacher.jpg';
 
 export default function Search() {
   return (
-    <div className='container mx-auto w-full h-screen flex justify-center items-center flex-col gap-y-12' id='starter'>
+    <div className='container mx-auto w-full h-screen flex justify-center items-center flex-col gap-y-12 ' id='starter'>
       <div className='bg-white rounded-lg shadow-lg w-full h-[300px] flex justify-center items-center px-24 py-6 flex-col gap-y-6'>
         <h1 className='text-4xl font-bold text-primary-color font-montserrat'>İstediğin eğitim dalında ki eğitmenini bul! </h1>
         <span className='text-lg font-medium text-black text-opacity-50 font-montserrat'>Aşağıdaki alandan istediğin eğitmenin ismini girerek profiline gidebilir, yorumlarını ve puanını görüntüleyebilirsin.</span>

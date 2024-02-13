@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export default function RegisterOrLogin() {
   return (
-    <div className='container mx-auto w-full mt-24 mb-24' id='starter'>
+    <div className='container mx-auto w-full mt-36 mb-24' id='starter'>
       <div className='flex justify-center items-center h-full gap-x-8 mt-10'>
         <div className='bg-white h-[500px] w-[60%] rounded-xl shadow-xl px-8 py-8 flex flex-col gap-y-6 relative'>
           <h1 className='text-primary-color font-montserrat font-black text-[40px]'>Eğitimin kolay adresinde hala bir hesaba sahip değil misin?</h1>
