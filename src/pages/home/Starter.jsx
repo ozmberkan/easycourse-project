@@ -8,7 +8,7 @@ export default function Starter() {
     <>
     <div className='w-full h-[500px] bg-white rounded-xl mt-[150px] flex justify-start items-start shadow-xl' >
       <div className='w-[700px] h-full  flex justify-center items-center'>
-        <img src="./assets/homeill.png" alt="" />
+        <img src="src/assets/homeill.png" alt="" />
       </div>
       <div className='w-full px-5 py-6 flex flex-col gap-y-3'>
         <h1 className='text-primary-color font-montserrat font-black text-[50px] '>Eğitimin kolay adresi ! </h1>
