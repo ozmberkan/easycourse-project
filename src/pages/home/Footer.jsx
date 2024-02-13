@@ -38,10 +38,10 @@ export default function Footer() {
       </div>
       <div className=' w-full h-full'>
         <div className='w-full h-full flex flex-col gap-y-4 py-16'> 
-        <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-full text-white'>Giriş Yap</button>
-        <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-full text-white'>Kayıt Ol</button>
-        <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-full text-white'>Ücretlendirme</button>
-        <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-full text-white'>Avantajlar</button>
+        <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-full text-white hover:bg-white hover:text-primary-color hover:border-primary-color border transition-all'>Giriş Yap</button>
+        <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-full text-white hover:bg-white hover:text-primary-color hover:border-primary-color border transition-all'>Kayıt Ol</button>
+        <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-full text-white hover:bg-white hover:text-primary-color hover:border-primary-color border transition-all'>Ücretlendirme</button>
+        <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-full text-white hover:bg-white hover:text-primary-color hover:border-primary-color border transition-all'>Avantajlar</button>
         </div>
       </div>
     </div>
