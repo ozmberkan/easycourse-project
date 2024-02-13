@@ -1,7 +1,7 @@
 import React from 'react'
 import { IoIosSearch } from "react-icons/io";
 import { FaArrowDown } from "react-icons/fa6";
-import myImage from '/src/assets/mainWallpaper.png';
+import homeIll from '/src/assets/homeill.png';
 
 
 export default function Starter() {
@@ -9,7 +9,7 @@ export default function Starter() {
     <>
     <div className='w-full h-[500px] bg-white rounded-xl mt-[150px] flex justify-start items-start shadow-xl' >
       <div className='w-[700px] h-full  flex justify-center items-center'>
-        <img src={myImage} alt="homeIll"/>
+        <img src={homeIll} alt="homeIll"/>
       </div>
       <div className='w-full px-5 py-6 flex flex-col gap-y-3'>
         <h1 className='text-primary-color font-montserrat font-black text-[50px] '>Eğitimin kolay adresi ! </h1>

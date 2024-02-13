@@ -1,6 +1,8 @@
 import React from 'react'
 import { IoIosSearch } from "react-icons/io";
 import { FaStar } from "react-icons/fa";
+import mathTeacher from '/src/assets/mathteacher.jpg';
+import geometryTeacher from '/src/assets/geometryteacher.jpg';
 
 export default function Search() {
   return (
@@ -33,7 +35,7 @@ export default function Search() {
                 <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-24 text-white'>Profil</button>
               </div>
               <div className='bg-white w-full h-full object-cover'>
-                <img src="/src/assets/mathteacher.jpg" alt="" className='object-cover w-full h-full rounded-lg cursor-pointer' />
+                <img src={mathTeacher} alt="" className='object-cover w-full h-full rounded-lg cursor-pointer' />
               </div>
             </div>
           </div>
@@ -55,7 +57,7 @@ export default function Search() {
                 <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-24 text-white'>Profil</button>
               </div>
               <div className='bg-white w-full h-full object-cover'>
-                <img src="/src/assets/geometriteacher.jpg" alt="" className='object-cover w-full h-full rounded-lg cursor-pointer' />
+                <img src={geometryTeacher} alt="" className='object-cover w-full h-full rounded-lg cursor-pointer' />
               </div>
             </div>
           </div>

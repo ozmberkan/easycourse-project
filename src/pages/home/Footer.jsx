@@ -1,4 +1,7 @@
 import React from 'react'
+import appStore from '/src/assets/appstore.png';
+import playStore from '/src/assets/playstore.png';
+import huawei from '/src/assets/huawei.jpg';
 
 export default function Footer() {
   return (
@@ -7,9 +10,9 @@ export default function Footer() {
         <div className='w-[25%] h-full  px-4 py-4'>
           <h1 className='font-damion text-[50px]'>easycourse</h1>
           <div className='flex flex-col gap-y-4 '>
-            <img src="/src/assets/appstore.png" alt=""className='w-64 h-20 cursor-pointer' />
-            <img src="/src/assets/playstore.png" alt="" className='w-64 h-20 cursor-pointer'/>
-            <img src="/src/assets/huawei.jpg" alt="" className='w-64 h-20 cursor-pointer'/>
+            <img src={appStore} alt=""className='w-64 h-20 cursor-pointer' />
+            <img src={playStore} alt="" className='w-64 h-20 cursor-pointer'/>
+            <img src={huawei} alt="" className='w-64 h-20 cursor-pointer'/>
           </div>
         </div>
         <div className='w-[25%]  h-full px-4 py-24'>
