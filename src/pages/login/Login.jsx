@@ -33,7 +33,7 @@ export default function Login() {
     const teacherSet = (e) => { setTeacherCode(e.target.value) }
 
     const handleLogin = () => {
-      if(email === 'admin' && password === 'admin' && !enabled){
+      if(email === 'admin@admin' && password === 'admin' && !enabled){
         navigate('/studentprofile')
       }else if(email === 'admin' && password === 'admin' && enabled && teacherCode === '1234'){
         navigate('/teacherprofile')
