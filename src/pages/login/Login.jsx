@@ -33,9 +33,21 @@ export default function Login() {
     const enabledClick = () => { setEnabled(!enabled) }
 
     const handleLogin = () => {
-      if(email === 'admin@admin' && password === 'admin' && !enabled){
+      if(email === '' && password === '' && teacherCode === ''){
+        alert('Lütfen tüm alanları doldurunuz!')
+      }
+      else if(email === '' && password === '' && enabled && teacherCode === ''){
+        alert('Lütfen tüm alanları doldurunuz!')
+      }
+      else if(email != 'admin@admin' && password != 'admin' && !enabled){
+        alert('Öğrenci girişi yapmak için lütfen admin@admin ve admin parolasını kullanınız.')
+      }
+      else if(email != 'admin@admin' && password != 'admin' && enabled && teacherCode != '1234'){
+        alert('Eğitmen girişi yapmak için lütfen admin@admin, admin parolasını ve 1234 kodunu kullanınız.')
+      }
+      else if(email === 'admin@admin' && password === 'admin' && !enabled){
         navigate('/studentprofile')
-      }else if(email === 'admin@admin' && password === 'admin' && enabled && teacherCode === '123'){
+      }else if(email === 'admin@admin' && password === 'admin' && enabled && teacherCode === '1234'){
         navigate('/teacherprofile')
       }
     }
