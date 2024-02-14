@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '/src/pages/home/Header'
+import StudentHeader from '/src/pages/student/StudentHeader.jsx'
 import studentImg from '/src/assets/student.jpg'
 import { IoMdArrowDroprightCircle } from "react-icons/io";
 
@@ -8,7 +8,7 @@ export default function StudentProfile() {
   return (
     <div className='w-full h-screen bg-[url("/src/assets/mainWallpaper.png")] bg-cover bg-center' >
       <div className='container mx-auto'>
-        <Header />
+        <StudentHeader />
         <div className='w-full h-[730px] mt-12 flex gap-x-5 '>
           <div className='bg-white w-full h-full rounded-lg shadow-md px-6 py-6 flex flex-col gap-y-3'>
             <h1 className='text-primary-color font-montserrat text-[35px] font-semibold'>Berkan ÖZMEN</h1>
