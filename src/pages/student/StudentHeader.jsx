@@ -14,8 +14,8 @@ export default function StudentHeader() {
             <Link to="/">
               <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat'>Derslerim</button>
             </Link>
-            <Link to="/">
-              <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat'>Bildirimlerim</button>
+            <Link to="/studentmeet">
+              <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat'>Randevularım</button>
             </Link>
             <Link to="/studentprofile">
               <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat'>Profilim</button>
