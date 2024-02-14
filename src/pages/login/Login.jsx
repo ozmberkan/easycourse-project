@@ -4,6 +4,7 @@ import loginImage from '/src/assets/loginill.png'
 import { Switch } from '@headlessui/react'
 import googleImg from '/src/assets/googleLogo.png'
 import facebookImg from '/src/assets/facebookLogo.png'
+import { useNavigate } from 'react-router-dom'
 
 
 
@@ -21,8 +22,24 @@ export default function Login() {
     }
   }, [enabled]);
 
-  
 
+    const navigate = useNavigate();
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [teacherCode, setTeacherCode] = useState('');
+
+    const emailSet = (e) => { setEmail(e.target.value) }
+    const passwordSet = (e) => { setPassword(e.target.value) }
+    const teacherSet = (e) => { setTeacherCode(e.target.value) }
+
+    const handleLogin = () => {
+      if(email === 'admin' && password === 'admin' && !enabled){
+        navigate('/studentprofile')
+      }else if(email === 'admin' && password === 'admin' && enabled && teacherCode === '1234'){
+        navigate('/teacherprofile')
+      }
+    }
+    
   return (
 
 
@@ -39,14 +56,14 @@ export default function Login() {
                 </Switch>
               </div>
               <form className='flex justify-center items-center flex-col w-full mt-4 gap-y-4'>
-                <input  type="email" placeholder='E-posta Giriniz...' className='w-full py-4 px-4 border-[2px] rounded-lg border-primary-color' />
-                <input  type="password" placeholder='Parola Giriniz...' className='w-full py-4 px-4 border-[2px] rounded-lg border-primary-color' />
-                <input ref={teacherRef} type="text" placeholder='Eğitmen kodunu Giriniz' className='w-full py-4 px-4 border-[2px] rounded-lg border-primary-color'/>
+                <input onChange={emailSet} type="email" placeholder='E-posta Giriniz...' className='w-full py-4 px-4 border-[2px] rounded-lg border-primary-color' />
+                <input onChange={passwordSet} type="password" placeholder='Parola Giriniz...' className='w-full py-4 px-4 border-[2px] rounded-lg border-primary-color' />
+                <input onChange={teacherSet}  ref={teacherRef} type="text" placeholder='Eğitmen kodunu Giriniz' className='w-full py-4 px-4 border-[2px] rounded-lg border-primary-color'/>
                 <div className='flex gap-x-2 w-full '>
                   <input type="checkbox" id='checkbox' name='checkbox' />
                   <label name="checkbox" htmlFor='checkbox'>Beni Hatırla</label>
                 </div>
-                <button className='w-full py-4 bg-primary-color text-white rounded-lg font-montserrat font-bold' type='submit'>Giriş Yap</button>
+                <button onClick={handleLogin} className='w-full py-4 bg-primary-color text-white rounded-lg font-montserrat font-bold'>Giriş Yap</button>
                 <div className='w-full flex gap-x-4'>
                   <a href="#" className='text-primary-color font-montserrat font-semibold border border-primary-color py-6 px-12 w-full  rounded-lg flex gap-x-4 text-sm justify-center items-center'>
                     <img src={googleImg} alt=""  className='w-6'/>
