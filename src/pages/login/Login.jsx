@@ -18,7 +18,6 @@ export default function Login() {
     if (studentOrTeacherRef.current) {
       studentOrTeacherRef.current.textContent = enabled ? 'Eğitmen' : 'Öğrenci';
       teacherRef.current.style.display = enabled ? 'flex' : 'none';
-      teacherRef.current.style.transition = 'all 0.5s';
     }
   }, [enabled]);
 
@@ -31,11 +30,12 @@ export default function Login() {
     const emailSet = (e) => { setEmail(e.target.value) }
     const passwordSet = (e) => { setPassword(e.target.value) }
     const teacherSet = (e) => { setTeacherCode(e.target.value) }
+    const enabledClick = () => { setEnabled(!enabled) }
 
     const handleLogin = () => {
       if(email === 'admin@admin' && password === 'admin' && !enabled){
         navigate('/studentprofile')
-      }else if(email === 'admin' && password === 'admin' && enabled && teacherCode === '1234'){
+      }else if(email === 'admin@admin' && password === 'admin' && enabled && teacherCode === '123'){
         navigate('/teacherprofile')
       }
     }
@@ -51,7 +51,7 @@ export default function Login() {
             <div className='flex justify-start items-center w-full h-full py-8 flex-col px-12'>
               <h1 className='text-primary-color font-montserrat font-bold text-[40px] mb-4'>Giriş Yap</h1>
               <div>
-                <Switch onClick={() => setEnabled(!enabled)} checked={enabled} onChange={setEnabled} className={`${enabled ? 'bg-primary-color' : 'bg-primary-color'} relative inline-flex h-[50px] w-[305px] items-center rounded-full`}>
+                <Switch onClick={enabledClick} checked={enabled} onChange={setEnabled} className={`${enabled ? 'bg-primary-color' : 'bg-primary-color'} relative inline-flex h-[50px] w-[305px] items-center rounded-full`}>
                   <span ref={studentOrTeacherRef} className={`${enabled ? 'translate-x-40' : 'translate-x-1'} h-[40px] w-[140px] transform rounded-full bg-white transition-all duration-500 inline-flex justify-center items-center text-primary-color font-montserrat font-semibold`} />
                 </Switch>
               </div>
