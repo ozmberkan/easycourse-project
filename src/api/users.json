@@ -4,27 +4,27 @@
         "name": "Serkan",
         "surname": "Alıcı",
         "lesson": "Matematik",
-        "avatar" : "dist/assets/mathteacher-CykTWdEq.jpg"
+        "avatar" : "public/assets/mathteacher-CykTWdEq.jpg"
     },
     {
         "id" : "2",
         "name": "Eylül",
         "surname": "Ekin",
         "lesson": "Geometri" ,
-        "avatar" : "dist/assets/geometryteachertwo-Cmn37S1L.jpg"
+        "avatar" : "public/assets/geometryteachertwo-Cmn37S1L.jpg"
     },
     {
         "id" : "3",
         "name": "Ferhat",
         "surname": "Toker",
         "lesson": "Fizik",
-        "avatar" : "src/assets/fizikteacher.jpg"
+        "avatar" : "public/assets/fizikteacher.jpg"
     },
     {
         "id" : "4",
         "name": "Buket",
         "surname": "Yıldırım",
         "lesson": "Türk Dii ve Edebiyatı",
-        "avatar" : "src/assets/trteacher.jpg"
+        "avatar" : "public/assets/trteacher.jpg"
     }
 ]
