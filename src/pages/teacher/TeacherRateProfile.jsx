@@ -1,12 +1,12 @@
 import React from 'react'
-import TeacherHeader from '/src/pages/teacher/TeacherHeader.jsx'
+import Header from '/src/pages/home/Header.jsx'
 import mathteacher from '/src/assets/mathteacher.jpg'
 
 export default function TeacherRateProfile() {
   return (
     <div className='w-full h-screen bg-[url("/src/assets/mainWallpaper.png")] bg-cover bg-center' >
       <div className='container mx-auto'>
-        <TeacherHeader />
+        <Header />
         <div className='bg-white w-full h-[750px] mt-12 rounded-md shadow-xl'>
           <div className='px-4 py-4'>
             <h1 className='text-primary-color font-montserrat text-[35px] font-semibold'>Serkan ALICI</h1>

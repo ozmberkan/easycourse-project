@@ -1,7 +1,7 @@
 import Header from '/src/pages/home/Header.jsx'
 import { CiFilter } from "react-icons/ci";
 import Users from '/src/api/users.json';
-import { useEffect, useState,useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 
 
@@ -36,18 +36,18 @@ export default function TeacherSearch() {
             <p className='text-black font-montserrat text-md font-medium'>Aşağıdaki alandan istediğin dersin adını girerek eğitmenleri görüntüleyebilir, onların profiline gidebilir, yorumlarını ve puanını görüntüleyebilirsin.</p>
           </div>
           <div className='grid-cols-2 w-full flex justify-center items-center gap-x-4 mt-12'>
-            <input ref={ınputRef} onChange={searchTeacher}  type="text" className='border-2 border-primary-color text-gray-500 w-full px-4 py-4 rounded-md focus:outline-none 
-            +-' placeholder='Eğitmen Adı, Dersin Adı..'  />
+            <input ref={ınputRef} onChange={searchTeacher} type="text" className='border-2 border-primary-color text-gray-500 w-full px-4 py-4 rounded-md focus:outline-none 
+            +-' placeholder='Eğitmen Adı, Dersin Adı..' />
             <div className='flex items-center justify-center px-4 py-4 rounded-lg cursor-pointer bg-primary-color'>
               <CiFilter size={30} fill='#fff' />
             </div>
           </div>
           <ul className='w-full flex flex-col gap-y-6 gap-x-6 mt-8'>
-          {teacher.map((user, index) => (
-              <li key={index} className='flex justify-start items-center w-full px-4 py-6 border rounded-lg gap-x-6'>
+            {teacher.map((user, index) => (
+              <li key={index} className='flex justify-start items-center text-primary-color w-full px-4 py-6 border rounded-lg gap-x-6 cursor-pointer hover:text-white hover:bg-primary-color transition-colors '>
                 <img src={user.avatar} alt="" className='w-12 h-12 rounded-full object-cover' />
-                <h1 className='text-primary-color font-montserrat font-medium text-xl'>{user.name} {user.surname}</h1>
-                <span className='text-primary-color font-montserrat font-medium'>{user.lesson}</span>
+                  <h1 className=' font-montserrat font-medium text-xl '>{user.name} {user.surname}</h1>
+                  <span className=' font-montserrat font-medium  '>{user.lesson}</span>
               </li>
             ))}
           </ul>

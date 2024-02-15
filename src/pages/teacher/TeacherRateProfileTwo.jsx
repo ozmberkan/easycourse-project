@@ -1,12 +1,12 @@
 import React from 'react'
-import TeacherHeaderTwo from '/src/pages/teacher/TeacherHeaderTwo.jsx'
+import Header from '/src/pages/home/Header.jsx'
 import GeometryImage from '/src/assets/geometryteachertwo.jpg'
 
 export default function TeacherRateProfile() {
   return (
     <div className='w-full h-screen bg-[url("/src/assets/mainWallpaper.png")] bg-cover bg-center' >
       <div className='container mx-auto'>
-        <TeacherHeaderTwo />
+        <Header />
         <div className='bg-white w-full h-[750px] mt-12 rounded-md shadow-xl'>
           <div className='px-4 py-4'>
             <h1 className='text-primary-color font-montserrat text-[35px] font-semibold'>Eylül EKİN</h1>

@@ -1,8 +1,34 @@
 import React from 'react'
-import { Link } from 'react-router-dom' 
+import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import { useState } from 'react';
 
 
 export default function RegisterOrLogin() {
+
+
+  const navigate = useNavigate();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const emailSet = (e) => { setEmail(e.target.value) }
+  const passwordSet = (e) => { setPassword(e.target.value) }
+
+  const handleLogin = (e) => {
+    e.preventDefault()
+    if(email === '' && password === ''){
+      alert('Lütfen tüm alanları doldurunuz!')
+    }
+    else if(email != 'berkanozmen' && password != '123'){
+      alert('Öğrenci girişi yapmak için lütfen admin@admin ve admin parolasını kullanınız.')
+    }
+    else if(email === 'berkanozmen' && password === '123'){
+      navigate('/studentprofile')
+  }
+}
+
+
+
   return (
     <div className='container mx-auto w-full mt-36 mb-24' id='starter'>
       <div className='flex justify-center items-center h-full gap-x-8 mt-10'>
@@ -22,9 +48,9 @@ export default function RegisterOrLogin() {
         <div className='bg-white h-[500px] w-[40%] rounded-xl shadow-xl px-8 py-8 flex flex-col gap-y-6'>
           <h1 className='text-[30px] font-bold text-primary-color font-montserrat'>Bir hesaba sahipsen giriş yaparak detaylara ulaşabilirsin.</h1>
           <form className='flex flex-col gap-y-12'>
-            <input type="text" placeholder='Kullanıcı Adı' className='w-full border-primary-color border-b-2 py-4 focus:outline-none'/>
-            <input type="text" placeholder='Parola' className='w-full border-primary-color border-b-2 py-4 focus:outline-none'/>
-            <button className='w-full bg-primary-color text-white px-6 py-4 rounded-lg text-xl font-montserrat'>Giriş Yap</button>
+            <input onChange={emailSet} type="text" placeholder='Kullanıcı Adı' className='w-full border-primary-color border-b-2 py-4 focus:outline-none'/>
+            <input onChange={passwordSet} type="password" placeholder='Parola' className='w-full border-primary-color border-b-2 py-4 focus:outline-none'/>
+            <button onClick={handleLogin} className='w-full bg-primary-color text-white px-6 py-4 rounded-lg text-xl font-montserrat'>Giriş Yap</button>
           </form>
           <span className='text-center text-opacity-45 text-black hover:underline cursor-pointer transition-all font-montserrat'>Şifremi unuttum</span>
         </div>
