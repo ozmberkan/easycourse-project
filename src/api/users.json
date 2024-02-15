@@ -1,0 +1,30 @@
+[
+    {
+        "id" : "1",
+        "name": "Serkan",
+        "surname": "Alıcı",
+        "lesson": "Matematik",
+        "avatar" : "src/assets/mathteacher.jpg"
+    },
+    {
+        "id" : "2",
+        "name": "Eylül",
+        "surname": "Ekin",
+        "lesson": "Geometri" ,
+        "avatar" : "src/assets/geometryteacher.jpg"
+    },
+    {
+        "id" : "3",
+        "name": "Ferhat",
+        "surname": "Toker",
+        "lesson": "Fizik",
+        "avatar" : "src/assets/fizikteacher.jpg"
+    },
+    {
+        "id" : "4",
+        "name": "Buket",
+        "surname": "Yıldırım",
+        "lesson": "Türk Dii ve Edebiyatı",
+        "avatar" : "src/assets/trteacher.jpg"
+    }
+]

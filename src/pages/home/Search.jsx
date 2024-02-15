@@ -3,6 +3,7 @@ import { IoIosSearch } from "react-icons/io";
 import { FaStar } from "react-icons/fa";
 import mathTeacher from '/src/assets/mathteacher.jpg';
 import geometryTeacher from '/src/assets/geometryteacher.jpg';
+import { Link } from 'react-router-dom';
 
 export default function Search() {
   return (
@@ -12,7 +13,9 @@ export default function Search() {
         <span className='text-lg font-medium text-black text-opacity-50 font-montserrat'>Aşağıdaki alandan istediğin eğitmenin ismini girerek profiline gidebilir, yorumlarını ve puanını görüntüleyebilirsin.</span>
         <div className='flex justify-center items-center relative w-full'>
           <input type="text" placeholder='Eğitmen ara...' className='w-full h-20 z-10 rounded-xl border-[3px] border-primary-color text-black text-opacity-50 px-7 text-[25px] font-medium font-montserrat focus:outline-none' />
-          <IoIosSearch size={50} className='text-primary-color absolute right-5 top-35 z-20 cursor-pointer'/>
+          <Link to='/teachersearch' className='absolute right-5 top-35 z-20'>
+          <IoIosSearch  size={50} className='text-primary-color  cursor-pointer'/>
+          </Link>
         </div>
       </div>
 
@@ -32,7 +35,7 @@ export default function Search() {
                 <FaStar size={20}/>
                 <FaStar size={20}/>
                 </div>
-                <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-24 text-white'>Profil</button>
+                <Link to="/teacherrate" className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-24 text-white flex justify-center items-center'>Profil</Link>
               </div>
               <div className='bg-white w-full h-full object-cover'>
                 <img src={mathTeacher} alt="" className='object-cover w-full h-full rounded-lg cursor-pointer' />
@@ -54,7 +57,7 @@ export default function Search() {
                 <FaStar size={20}/>
                 <FaStar size={20}/>
                 </div>
-                <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-24 text-white'>Profil</button>
+                <Link to="/teacherratetwo" className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-24 text-white flex justify-center items-center'>Profil</Link>
               </div>
               <div className='bg-white w-full h-full object-cover'>
                 <img src={geometryTeacher} alt="" className='object-cover w-full h-full rounded-lg cursor-pointer' />

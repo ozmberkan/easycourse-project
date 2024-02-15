@@ -39,16 +39,20 @@ export default function Login() {
       else if(email === '' && password === '' && enabled && teacherCode === ''){
         alert('Lütfen tüm alanları doldurunuz!')
       }
-      else if(email != 'admin@admin' && password != 'admin' && !enabled){
+      else if(email != 'berkanozmen' && password != '123' && !enabled){
         alert('Öğrenci girişi yapmak için lütfen admin@admin ve admin parolasını kullanınız.')
       }
-      else if(email != 'admin@admin' && password != 'admin' && enabled && teacherCode != '1234'){
-        alert('Eğitmen girişi yapmak için lütfen admin@admin, admin parolasını ve 1234 kodunu kullanınız.')
+      else if((email != 'serkan@alici' || email != 'eylul@ekin') && password != '123' && enabled && teacherCode != '123'){
+        alert('Eğitmen girişi yapmak için lütfen serkan@alici ya da eylul@ekin, 123 parolasını ve 123 kodunu kullanınız.')
       }
-      else if(email === 'admin@admin' && password === 'admin' && !enabled){
+
+      else if(email === 'berkanozmen' && password === '123' && !enabled){
         navigate('/studentprofile')
-      }else if(email === 'admin@admin' && password === 'admin' && enabled && teacherCode === '1234'){
+      }else if(email === 'serkan@alici' && password === '123' && enabled && teacherCode === '123'){
         navigate('/teacherprofile')
+      }
+      else if(email === 'eylul@ekin' && password === '123' && enabled && teacherCode === '123'){
+        navigate('/teacherprofiletwo')
       }
     }
     

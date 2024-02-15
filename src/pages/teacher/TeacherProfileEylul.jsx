@@ -1,27 +1,26 @@
 import React from 'react'
-import TeacherHeader from '/src/pages/teacher/TeacherHeader.jsx'
-import teacherImg from '/src/assets/mathteacher.jpg'
+import teacherImg from '/src/assets/geometryteacher.jpg'
 import { IoMdArrowDroprightCircle } from "react-icons/io";
 import student from '/src/assets/student.jpg'
+import { Link } from 'react-router-dom';
+import TeacherHeaderTwo from './TeacherHeaderTwo';
 
 export default function TeacherProfile() {
   return (
     <div className='w-full h-screen bg-[url("/src/assets/mainWallpaper.png")] bg-cover bg-center' >
     <div className='container mx-auto'>
-      <TeacherHeader />
+      <TeacherHeaderTwo />
       <div className='w-full h-[730px] mt-12 flex gap-x-5 '>
         <div className='bg-white w-full h-full rounded-lg shadow-md px-6 py-6 flex flex-col gap-y-2'>
-          <h1 className='text-primary-color font-montserrat text-[35px] font-semibold'>Serkan ALICI</h1>
-          <p className='text-[#A8AEAF] text-xl'><span className='text-primary-color font-montserrat text-md font-semibold'>t</span> - @serkanalici</p>
+          <h1 className='text-primary-color font-montserrat text-[35px] font-semibold'>Eylül EKİN</h1>
+          <p className='text-[#A8AEAF] text-xl'><span className='text-primary-color font-montserrat text-md font-semibold'>t</span> - @eylulekin</p>
           <img src={teacherImg} alt="" className='rounded-xl w-full h-[350px] object-cover' />
           <div className='grid grid-cols-2 grid-rows-2 gap-x-4 gap-y-4 items-center'>
             <button className='bg-primary-color px-4 py-4 rounded-xl text-center text-white font-montserrat'>Şifre Değiştir</button>
             <button className='bg-primary-color px-4 py-4 rounded-xl text-center text-white font-montserrat'>Bildirim Ayarları</button>
             <button className='bg-primary-color px-4 py-4 rounded-xl text-center text-white font-montserrat'>E-Posta Değiştir</button>
-            <div className='relative '>
-              <input type="text" name="teacherCode" id="teacherCode" className='border w-full border-primary-color px-4 py-4 rounded-xl text-center text-primary-color font-montserrat' placeholder='Eğitmen Kodu' />
-              <IoMdArrowDroprightCircle className='absolute right-3 top-3.5 flex items-center cursor-pointer' size={30} />
-            </div>
+           <Link to="/teacherratetwo" className='bg-primary-color px-4 py-4 rounded-xl text-center text-white font-montserrat'>Ücretlendirme</Link>
+
           </div>
           <button className='w-full border border-primary-color px-4 py-4 rounded-md font-montserrat mt-4'>Profil Resmi Ekle/Değiştir</button>
         </div>

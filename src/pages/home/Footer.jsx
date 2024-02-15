@@ -21,7 +21,7 @@ export default function Footer() {
             <li className='text-primary-color font-montserrat font-medium text-lg cursor-pointer hover:underline'>Hakkımızda</li>
             <li className='text-primary-color font-montserrat font-medium text-lg cursor-pointer hover:underline'>Kariyer</li>
             <li className='text-primary-color font-montserrat font-medium text-lg cursor-pointer hover:underline'>Teknoloji Kariyerleri</li>
-            <li className='text-primary-color font-montserrat font-medium text-lg cursor-pointer hover:underline'>letişim</li>
+            <li className='text-primary-color font-montserrat font-medium text-lg cursor-pointer hover:underline'>İletişim</li>
           </ul>
         </div>
       </div>
@@ -44,10 +44,9 @@ export default function Footer() {
           <Link to='/register'>
           <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-full text-white hover:bg-white hover:text-primary-color hover:border-primary-color border transition-all'>Kayıt Ol</button>
           </Link>
-          <Link to='/advantage'>
-          <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-full text-white hover:bg-white hover:text-primary-color hover:border-primary-color border transition-all'>Avantajlar</button>
+          <Link to='/contact'>
+          <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-full text-white hover:bg-white hover:text-primary-color hover:border-primary-color border transition-all'>İletişim</button>
           </Link>
-        <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-full text-white hover:bg-white hover:text-primary-color hover:border-primary-color border transition-all'>Ücretlendirme</button>
         </div>
       </div>
     </div>
