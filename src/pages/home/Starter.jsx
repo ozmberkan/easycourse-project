@@ -17,9 +17,8 @@ export default function Starter() {
         <p className=' text-primary-color font-montserrat font-medium text-[25px] mb-5'>100'den fazla eğitmene ve  20’den fazla eğitim dalına anında erişebilir, kolayca öğrenebilirsin.</p>
         <div className='flex justify-center items-center relative'>
           <input type="text" placeholder='Ne öğrenmek istersin?' className='font-montserrat w-full h-20 z-10 rounded-xl border-[3px] border-primary-color text-black text-opacity-50 px-7 text-[20px] font-medium focus:outline-none' />
-          <Link to="/teachersearch">
-          <IoIosSearch size={50} className='text-primary-color absolute right-5 top-35 z-20 cursor-pointer'/>
-
+          <Link to="/teachersearch" className='absolute right-5 top-35 z-20'>
+          <IoIosSearch size={50} className='text-primary-color  cursor-pointer'/>
           </Link>
         </div>
         <div className='flex justify-start items-center gap-x-6 mt-4'>
