@@ -35,7 +35,8 @@ export default function TeacherSearch() {
             <p className='text-black font-montserrat text-md font-medium'>Aşağıdaki alandan istediğin dersin adını girerek eğitmenleri görüntüleyebilir, onların profiline gidebilir, yorumlarını ve puanını görüntüleyebilirsin.</p>
           </div>
           <div className='grid-cols-2 w-full flex justify-center items-center gap-x-4 mt-12'>
-            <input ref={ınputRef} onChange={searchTeacher}  type="text" className='border-2 border-primary-color text-gray-500 w-full px-4 py-4 rounded-md' placeholder='Eğitmen Adı, Dersin Adı..' />
+            <input ref={ınputRef} onChange={searchTeacher}  type="text" className='border-2 border-primary-color text-gray-500 w-full px-4 py-4 rounded-md focus:outline-none 
+            +-' placeholder='Eğitmen Adı, Dersin Adı..'  />
             <div className='flex items-center justify-center px-4 py-4 rounded-lg cursor-pointer bg-primary-color'>
               <CiFilter size={30} fill='#fff' />
             </div>
