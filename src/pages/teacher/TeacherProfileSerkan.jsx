@@ -1,11 +1,14 @@
 import React from 'react'
 import TeacherHeader from '/src/pages/teacher/TeacherHeader.jsx'
 import teacherImg from '/src/assets/mathteacher.jpg'
-import { IoMdArrowDroprightCircle } from "react-icons/io";
 import student from '/src/assets/student.jpg'
 import { Link } from 'react-router-dom';
 
+
 export default function TeacherProfile() {
+
+
+
   return (
     <div className='w-full h-screen bg-[url("/src/assets/mainWallpaper.png")] bg-cover bg-center' >
     <div className='container mx-auto'>
@@ -42,11 +45,13 @@ export default function TeacherProfile() {
               <option value="one">Ahmet İLÇİ</option>
             </select>
             <button className='bg-primary-color px-4 py-4 rounded-xl text-center text-white font-montserrat mb-5'>Ders Talebi Oluştur</button>
+            
           </div>
           <div className=' w-full rounded-md h-[350px] flex flex-col gap-y-4 py-3'>
             <p className='w-full flex justify-between items-center bg-gray-200 py-4 px-4 rounded-lg shadow-lg font-montserrat cursor-pointer'>Hocam bugün ders yapacak mıyız? <img src={student} alt="" className='w-7 h-7 rounded-full object-cover' /></p>
             <p className='w-full flex justify-between items-center bg-gray-200 py-4 px-4 rounded-lg shadow-lg font-montserrat cursor-pointer'>Bu soruda neden böyle yaptık? <img src={student} alt="" className='w-7 h-7 rounded-full object-cover' /></p>
             <p className='w-full flex justify-between items-center bg-gray-200 py-4 px-4 rounded-lg shadow-lg font-montserrat cursor-pointer'>Saat 15:30 gibi derse başlayabiliriz.<img src={student} alt="" className='w-7 h-7 rounded-full object-cover' /></p>
+           
           </div>
         </div>
 

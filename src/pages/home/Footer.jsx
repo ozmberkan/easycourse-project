@@ -10,9 +10,9 @@ export default function Footer() {
       <div className=' w-full h-full'>
         <h1 className='font-damion text-[50px] text-primary-color'>easycourse</h1>
         <div className='flex flex-col gap-y-6'>
-          <img src={appStore} alt="" className='w-[170px]' />
-          <img src={playStore} alt="" className='w-[170px]' />
-          <img src={huawei} alt="" className='w-[170px]' />
+          <img src={appStore} alt="" className='w-[170px] cursor-pointer' />
+          <img src={playStore} alt="" className='w-[170px] cursor-pointer' />
+          <img src={huawei} alt="" className='w-[170px] cursor-pointer' />
         </div>
       </div>
       <div className=' w-full h-full'>
@@ -21,7 +21,7 @@ export default function Footer() {
             <li className='text-primary-color font-montserrat font-medium text-lg cursor-pointer hover:underline'>Hakkımızda</li>
             <li className='text-primary-color font-montserrat font-medium text-lg cursor-pointer hover:underline'>Kariyer</li>
             <li className='text-primary-color font-montserrat font-medium text-lg cursor-pointer hover:underline'>Teknoloji Kariyerleri</li>
-            <li className='text-primary-color font-montserrat font-medium text-lg cursor-pointer hover:underline'>İletişim</li>
+            <Link to='/contact' className='text-primary-color font-montserrat font-medium text-lg cursor-pointer hover:underline'>İletişim</Link>
           </ul>
         </div>
       </div>

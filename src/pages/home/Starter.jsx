@@ -23,10 +23,10 @@ export default function Starter() {
         </div>
         <div className='flex justify-start items-center gap-x-6 mt-4'>
           <span className='text-black mt-5 font-montserrat'>Popüler aratmalar :</span>
-          <button className='bg-primary-color text-white w-24 h-10 rounded-md mt-5 font-montserrat'>Matematik</button>
-          <button className='bg-primary-color text-white w-24 h-10 rounded-md mt-5 font-montserrat'>İngilizce</button>
-          <button className='bg-primary-color text-white w-24 h-10 rounded-md mt-5 font-montserrat'>Geometri</button>
-          <button className='bg-primary-color text-white w-24 h-10 rounded-md mt-5 font-montserrat'>Fizik</button>
+          <Link to="/teachersearch" className='bg-primary-color text-white w-auto px-4 h-10 rounded-md mt-5 font-montserrat flex justify-center items-center'>Matematik</Link>
+          <Link to="/teachersearch" className='bg-primary-color text-white w-auto px-4 h-10 rounded-md mt-5 font-montserrat flex justify-center items-center'>Türk Dili ve Edebiyatı</Link>
+          <Link to="/teachersearch" className='bg-primary-color text-white w-auto px-4 h-10 rounded-md mt-5 font-montserrat flex justify-center items-center'>Fizik</Link>
+          <Link to="/teachersearch" className='bg-primary-color text-white w-auto px-4 h-10 rounded-md mt-5 font-montserrat flex justify-center items-center'>Geometri</Link>
         </div>
       </div>
     </div>

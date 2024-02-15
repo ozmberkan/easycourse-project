@@ -16,6 +16,9 @@ export default {
         'damion': ['Damion'],
         'montserrat' : ['Montserrat'],
       },
+      backgroundImage: {
+        'advantagebg': "url('/assets/ssurf.svg')",
+      },
     },
   },
   plugins: [],
