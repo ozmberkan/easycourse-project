@@ -76,7 +76,7 @@ export default function Login() {
                 <h1 className='text-primary-color font-montserrat font-bold text-[20px] mb-4'>Giriş Yap</h1>
                 <div>
                   <Switch onClick={enabledClick} checked={enabled} onChange={setEnabled} className={`${enabled ? 'bg-primary-color' : 'bg-primary-color'} relative inline-flex h-[40px] w-[200px] items-center rounded-full`}>
-                    <span ref={studentOrTeacherRef} className={`${enabled ? 'translate-x-24 text-primary-color' : 'translate-x-1 text-primary-color'}  w-[100px] h-[30px] transform rounded-full bg-white transition-all duration-500 inline-flex justify-center items-center text-primary-color font-montserrat font-semibold`} />
+                    <span ref={studentOrTeacherRef} className={`${enabled ? 'translate-x-24' : 'translate-x-1'}  w-[100px] h-[30px] transform rounded-full bg-white transition-all duration-500 inline-flex justify-center items-center text-primary-color font-montserrat font-semibold`} />
                   </Switch>
                 </div>
                 <form className='flex justify-center items-center flex-col w-full mt-4 gap-y-4'>
@@ -122,7 +122,7 @@ export default function Login() {
               <h1 className='text-primary-color font-montserrat font-bold text-[40px] mb-4'>Giriş Yap</h1>
               <div>
                 <Switch onClick={enabledClick} checked={enabled} onChange={setEnabled} className={`${enabled ? 'bg-primary-color' : 'bg-primary-color'} relative inline-flex h-[50px] w-[305px] items-center rounded-full`}>
-                  <span ref={studentOrTeacherRef} className={`${enabled ? 'translate-x-40 text-primary-color' : 'translate-x-1 text-primary-color'} h-[40px] w-[140px] transform rounded-full bg-white transition-all duration-500 inline-flex justify-center items-center text-primary-color font-montserrat font-semibold`} />
+                  <span ref={studentOrTeacherRef} className={`${enabled ? 'translate-x-40' : 'translate-x-1'} h-[40px] w-[140px] transform rounded-full bg-white transition-all duration-500 inline-flex justify-center items-center text-primary-color font-montserrat font-semibold`} />
                 </Switch>
               </div>
               <form className='flex justify-center items-center flex-col w-full mt-4 gap-y-4'>
