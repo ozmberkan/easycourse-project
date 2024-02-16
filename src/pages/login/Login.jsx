@@ -42,10 +42,10 @@ export default function Login() {
       alert('Lütfen tüm alanları doldurunuz!')
     }
     else if (email != 'berkan@ozmen' && password != '123' && !enabled) {
-      alert('Öğrenci girişi yapmak için lütfen admin@admin ve admin parolasını kullanınız.')
+      alert('Öğrenci girişi yapmak için lütfen {berkan@ozmen} ve {123} parolasını kullanınız.')
     }
     else if ((email != 'serkan@alici' || email != 'eylul@ekin') && password != '123' && enabled && teacherCode != '123') {
-      alert('Eğitmen girişi yapmak için lütfen serkan@alici ya da eylul@ekin, 123 parolasını ve 123 kodunu kullanınız.')
+      alert('Eğitmen girişi yapmak için lütfen {serkan@alici} ya da {eylul@ekin}, {123} parolasını ve {123} kodunu kullanınız.')
     }
 
     else if (email === 'berkan@ozmen' && password === '123' && !enabled) {

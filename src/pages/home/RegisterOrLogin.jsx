@@ -23,7 +23,7 @@ export default function RegisterOrLogin() {
       alert('Lütfen tüm alanları doldurunuz!')
     }
     else if(email != 'berkanozmen' && password != '123'){
-      alert('Öğrenci girişi yapmak için lütfen admin@admin ve admin parolasını kullanınız.')
+      alert('Öğrenci girişi yapmak için lütfen {erkan@ozmen} ve {123} parolasını kullanınız.')
     }
     else if(email === 'berkanozmen' && password === '123'){
       navigate('/studentprofile')
