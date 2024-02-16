@@ -19,7 +19,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-<React.StrictMode>
     <BrowserRouter>
         <Routes>
             <Route path="/" element={<App />} />
@@ -37,5 +36,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <Route path="/advantage" element={<Advantage />} />
         </Routes>
     </BrowserRouter>
-</React.StrictMode>
 );

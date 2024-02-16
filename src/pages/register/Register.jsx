@@ -15,9 +15,9 @@ export default function Register() {
       <div className='w-full h-screen bg-[url("/src/assets/mainWallpaper.png")] bg-cover bg-center' >
         <div className='container mx-auto flex flex-col px-4 py-4'>
           <Header />
-          <div className='bg-white shadow-xl w-full h-screen items-center rounded-xl max-h-full flex flex-col mt-12'>
-            <div className='flex justify-center items-center w-full h-full bg-white  rounded px-1 py-1 max-h-full'>
-              <img src={registerill} alt="" className='object-cover w-[200px] drop-shadow-lg' />
+          <div className='bg-white shadow-xl w-full  items-center rounded-xl max-h-full flex flex-col mt-6'>
+            <div className='flex justify-center items-center w-full bg-white  rounded px-1 py-1 max-h-full'>
+              <img src={registerill} alt="" className='object-cover w-[150px] drop-shadow-lg mt-1' />
             </div>
             <div className='flex justify-start items-center w-full h-full py-8 flex-col px-12'>
               <h1 className='text-primary-color font-montserrat font-bold text-[20px] mb-4'>Kayıt Ol</h1>
