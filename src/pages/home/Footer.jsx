@@ -12,7 +12,7 @@ export default function Footer() {
   if (isMobile) {
     return (
       <>
-        <div className='bg-white w-full flex justify-center items-center flex-col mt-24 '>
+        <div className='bg-white w-full flex justify-center items-center flex-col mt-36 rounded-md shadow-lg '>
             <h1 className='font-damion text-[50px] text-primary-color w-full flex justify-center items-center mt-2'>easycourse</h1>
             <hr className='mb-2 mt-2' />
 

@@ -32,7 +32,7 @@ export default function RegisterOrLogin() {
 
   if(isMobile){
     return(
-      <div className='container mx-auto w-full mt-12 pt-2 mb-12' id='starter'>
+      <div className='container mx-auto w-full mt-12 pt-2' id='starter'>
       <div className='flex justify-center items-center h-full gap-x-8 mt-10 flex-col gap-y-12'>
 
         <div className='bg-white h-[500px] w-full rounded-xl shadow-xl px-8 py-8 flex flex-col gap-y-6 relative text-center '>
@@ -48,7 +48,7 @@ export default function RegisterOrLogin() {
           </div>
         </div>
 
-        <div className='bg-white h-[500px] w-full rounded-xl shadow-xl px-8 py-8 flex flex-col gap-y-6'>
+        <div className='bg-white h-[500px] w-full rounded-xl shadow-xl px-8 py-8 flex flex-col gap-y-6 mb-12'>
           <h1 className='text-[20px] font-bold text-primary-color font-montserrat'>Bir hesaba sahipsen giriş yaparak detaylara ulaşabilirsin.</h1>
           <form className='flex flex-col gap-y-12'>
             <input onChange={emailSet} type="text" placeholder='Kullanıcı Adı' className='w-full border-primary-color border-b-2 py-4 focus:outline-none'/>
