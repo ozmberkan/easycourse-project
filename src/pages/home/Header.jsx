@@ -12,7 +12,7 @@ export default function Header() {
     const [open, setOpen] = useState(false)
 
 
-    const isMobile = useMedia(600);
+    const isMobile = useMedia(1024);
 
     if (isMobile) {
         return (

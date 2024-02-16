@@ -8,7 +8,7 @@ import useMedia from '/src/hooks/useMedia'
 
 export default function Register() {
 
-  const isMobile = useMedia(600);
+  const isMobile = useMedia(1024);
 
   if (isMobile) {
     return (
