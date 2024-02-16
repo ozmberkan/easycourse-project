@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 export default function StudentHeader() {
 
   return (
-    // ilk section baslangic
     <div className='h-20 text-white pt-4'>
         <nav className='flex justify-between items-center'>
           <Link to="/">
@@ -23,6 +22,5 @@ export default function StudentHeader() {
           </div>
         </nav>
     </div>
-    // ilk section bitis
   );
 }

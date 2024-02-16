@@ -14,8 +14,8 @@ export default function TeacherHeader() {
             <Link>
               <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat'>Derslerim</button>
             </Link>
-            <Link>
-              <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat'>Bildirimlerim</button>
+            <Link to="/teachermeet">
+              <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat'>Randevularım</button>
             </Link>
             <Link to="/teacherprofile">
               <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat'>Profilim</button>
