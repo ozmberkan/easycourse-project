@@ -16,10 +16,10 @@ export default function Header() {
 
     if (isMobile) {
         return (
-            <>
+            <div className='bg-white rounded-bl-lg rounded-br-lg px-4 py-4'>
                 <nav className='flex justify-between items-center'>
-                    <h1 className='font-damion text-[30px] cursor-pointer flex justify-center items-center'>easycourse</h1>
-                    <button onClick={() => setOpen(true)} className='text-black text-2xl mr-2'><BsThreeDots /></button>
+                    <Link to="/" className='font-damion text-[30px] cursor-pointer flex justify-center items-center'>easycourse</Link>
+                    <button onClick={() => setOpen(true)} className='text-black text-[40px] mr-2 flex justify-center items-center'><BsThreeDots /></button>
                 </nav>
                 <BottomSheet open={open} onDismiss={() => setOpen(false)}>
                     <div className='flex flex-col w-full px-4 py-4 gap-y-4'>
@@ -27,7 +27,7 @@ export default function Header() {
                         <Link to="/register" className='text-primary-color  border border-primary-color  px-4 py-2 rounded-md font-montserrat flex justify-center items-center'>Kayıt Ol</Link>
                     </div>
                 </BottomSheet>
-            </>
+            </div>
         )
     }
 

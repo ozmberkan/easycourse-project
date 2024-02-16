@@ -2,10 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react';
+import useMedia from '/src/hooks/useMedia';
 
 
 export default function RegisterOrLogin() {
 
+
+  const isMobile = useMedia(1024);
 
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
@@ -26,6 +29,41 @@ export default function RegisterOrLogin() {
       navigate('/studentprofile')
   }
 }
+
+  if(isMobile){
+    return(
+      <div className='container mx-auto w-full mt-12 pt-2' id='starter'>
+      <div className='flex justify-center items-center h-full gap-x-8 mt-10 flex-col gap-y-12'>
+
+        <div className='bg-white h-[500px] w-full rounded-xl shadow-xl px-8 py-8 flex flex-col gap-y-6 relative text-center '>
+          <h1 className='text-primary-color font-montserrat font-black text-[30px]'>Eğitimin kolay adresinde hala bir hesaba sahip değil misin?</h1>
+          <p className='text-black font-montserrat font-medium text-[15px]'>Aşağıdaki butona basarak ücretsiz bir şekilde hesap oluşturabilirsin ve öğrenci paketlerini inceleyebilirsin.</p>
+          <div className='flex gap-x-5 justify-center items-center'>
+            <Link to="/register" path="relative">
+            <button className='bg-primary-color text-white w-28 h-12 rounded-md mt-5 font-montserrat' >Kayıt Ol</button>
+            </Link>
+            <Link to="/advantage" path="relative">
+            <button className='bg-primary-color text-white w-28 h-12 rounded-md mt-5 font-montserrat' >Paketler</button>
+            </Link>
+          </div>
+        </div>
+
+        <div className='bg-white h-[500px] w-full rounded-xl shadow-xl px-8 py-8 flex flex-col gap-y-6'>
+          <h1 className='text-[20px] font-bold text-primary-color font-montserrat'>Bir hesaba sahipsen giriş yaparak detaylara ulaşabilirsin.</h1>
+          <form className='flex flex-col gap-y-12'>
+            <input onChange={emailSet} type="text" placeholder='Kullanıcı Adı' className='w-full border-primary-color border-b-2 py-4 focus:outline-none'/>
+            <input onChange={passwordSet} type="password" placeholder='Parola' className='w-full border-primary-color border-b-2 py-4 focus:outline-none'/>
+            <button onClick={handleLogin} className='w-full bg-primary-color text-white px-6 py-4 rounded-lg text-xl font-montserrat'>Giriş Yap</button>
+          </form>
+          <span className='text-center text-opacity-45 text-black hover:underline cursor-pointer transition-all font-montserrat'>Şifremi unuttum</span>
+        </div>
+      </div>
+    </div>
+    )
+  }
+
+
+
 
 
 
