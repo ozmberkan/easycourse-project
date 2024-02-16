@@ -21,7 +21,7 @@ export default function Starter() {
             <h1 className='text-primary-color font-montserrat font-black text-[25px] '>Eğitimin kolay adresi ! </h1>
             <p className=' text-primary-color font-montserrat font-medium text-[15px] mb-5'>100'den fazla eğitmene ve  20’den fazla eğitim dalına anında erişebilir, kolayca öğrenebilirsin.</p>
             <div className='flex justify-center items-center relative w-full'>
-              <input type="text" placeholder='Ne öğrenmek istersin?' className='font-montserrat w-full h-12 rounded-xl border-[3px] border-primary-color text-black text-opacity-50 pl-7 pr-12 text-[20px] font-medium focus:outline-none' />
+              <input type="text" placeholder='Ne öğrenmek istersin?' className='font-montserrat w-full h-12 rounded-xl border-[3px] border-primary-color text-black text-opacity-50 pl-7 pr-12 text-[14px] font-medium focus:outline-none' />
               <Link to="/teachersearch" className='absolute right-5 top-35 ml-3 w-6 h-6 flex justify-center items-center'>
                 <IoIosSearch size={20} className='text-primary-color  cursor-pointer' />
               </Link>
