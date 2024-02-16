@@ -75,8 +75,8 @@ export default function Login() {
               <div className='flex justify-start items-center w-full h-full py-8 flex-col px-12'>
                 <h1 className='text-primary-color font-montserrat font-bold text-[20px] mb-4'>Giriş Yap</h1>
                 <div>
-                  <Switch onClick={enabledClick} checked={enabled} onChange={setEnabled} className={`${enabled ? 'bg-primary-color' : 'bg-primary-color'} relative inline-flex h-[50px] w-[305px] items-center rounded-full`}>
-                    <span ref={studentOrTeacherRef} className={`${enabled ? 'translate-x-40' : 'translate-x-1'} h-[40px] w-[140px] transform rounded-full bg-white transition-all duration-500 inline-flex justify-center items-center text-primary-color font-montserrat font-semibold`} />
+                  <Switch onClick={enabledClick} checked={enabled} onChange={setEnabled} className={`${enabled ? 'bg-primary-color' : 'bg-primary-color'} relative inline-flex h-[40px] w-[200px] items-center rounded-full`}>
+                    <span ref={studentOrTeacherRef} className={`${enabled ? 'translate-x-24 text-primary-color' : 'translate-x-1 text-primary-color'}  w-[100px] h-[30px] transform rounded-full bg-white transition-all duration-500 inline-flex justify-center items-center text-primary-color font-montserrat font-semibold`} />
                   </Switch>
                 </div>
                 <form className='flex justify-center items-center flex-col w-full mt-4 gap-y-4'>
@@ -91,11 +91,11 @@ export default function Login() {
                   <div className='w-full flex gap-x-4 flex-col gap-y-2'>
                   <a href="#" className='text-primary-color font-montserrat font-semibold border border-primary-color py-3 text-center w-full  rounded-lg flex gap-x-4 text-sm justify-center items-center'>
                     <img src={googleImg} alt="" className='w-4 h-4' />
-                    <p>Google ile Kayıt Ol!</p>
+                    <p>Google ile Devam Et!</p>
                   </a>
                   <a href="#" className='text-primary-color font-montserrat font-semibold border border-primary-color py-3 text-center  w-full rounded-lg flex gap-x-4 text-sm justify-center items-center'>
                     <img src={facebookImg} alt="" className='w-4 h-4' />
-                    <p>Google ile Kayıt Ol!</p>
+                    <p>Facebook ile Devam Et!</p>
                   </a>
                 </div>
                 </form>
@@ -122,7 +122,7 @@ export default function Login() {
               <h1 className='text-primary-color font-montserrat font-bold text-[40px] mb-4'>Giriş Yap</h1>
               <div>
                 <Switch onClick={enabledClick} checked={enabled} onChange={setEnabled} className={`${enabled ? 'bg-primary-color' : 'bg-primary-color'} relative inline-flex h-[50px] w-[305px] items-center rounded-full`}>
-                  <span ref={studentOrTeacherRef} className={`${enabled ? 'translate-x-40' : 'translate-x-1'} h-[40px] w-[140px] transform rounded-full bg-white transition-all duration-500 inline-flex justify-center items-center text-primary-color font-montserrat font-semibold`} />
+                  <span ref={studentOrTeacherRef} className={`${enabled ? 'translate-x-40 text-primary-color' : 'translate-x-1 text-primary-color'} h-[40px] w-[140px] transform rounded-full bg-white transition-all duration-500 inline-flex justify-center items-center text-primary-color font-montserrat font-semibold`} />
                 </Switch>
               </div>
               <form className='flex justify-center items-center flex-col w-full mt-4 gap-y-4'>
@@ -136,12 +136,12 @@ export default function Login() {
                 <button onClick={handleLogin} className='w-full py-4 bg-primary-color text-white rounded-lg font-montserrat font-bold'>Giriş Yap</button>
                 <div className='w-full flex gap-x-4'>
                   <a href="#" className='text-primary-color font-montserrat font-semibold border border-primary-color py-6 px-12 w-full  rounded-lg flex gap-x-4 text-sm justify-center items-center'>
-                    <img src={googleImg} alt="" className='w-6' />
-                    Google ile Devam Et!
+                    <img src={googleImg} alt="" className='w-4 h-4' />
+                    <p>Google ile Devam Et!</p>
                   </a>
                   <a href="#" className='text-primary-color font-montserrat font-semibold border border-primary-color py-6 px-12 w-full rounded-lg flex gap-x-4 text-sm justify-center items-center'>
-                    <img src={facebookImg} alt="" className='w-6' />
-                    Facebook ile Devam Et!
+                    <img src={facebookImg} alt="" className='w-4 h-4' />
+                    <p>Facebook ile Devam Et!</p>
                   </a>
                 </div>
               </form>
