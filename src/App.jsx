@@ -8,7 +8,7 @@ import React from 'react';
 export default function () {
   return (
     <div className='w-full h-screen bg-[url("/src/assets/mainWallpaper.png")] bg-cover bg-center' >
-      <div className='container mx-auto'>
+      <div className='container mx-auto scroll-ml-4'>
         <Header />
         <Starter />
         <RegisterOrLogin />

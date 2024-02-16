@@ -5,6 +5,7 @@ import { Switch } from '@headlessui/react'
 import googleImg from '/src/assets/googleLogo.png'
 import facebookImg from '/src/assets/facebookLogo.png'
 import { useNavigate } from 'react-router-dom'
+import Footer from '/src/pages/home/Footer.jsx'
 
 
 
@@ -60,8 +61,8 @@ export default function Login() {
 
 
     <>
-      <div className='w-full h-screen bg-[url("/src/assets/mainWallpaper.png")] bg-cover bg-center' >
-        <div className='container mx-auto flex flex-col gap-y-12 h-screen'>
+      <div className='w-full h-screen bg-[url("/src/assets/mainWallpaper.png")] bg-cover bg-center ' >
+        <div className='container mx-auto flex flex-col gap-y-12'>
           <Header />
           <div className='bg-white  shadow-xl w-full h-[700px] grid grid-cols-2 items-center rounded-xl max-h-full'>
             <div className='flex justify-start items-center w-full h-full py-8 flex-col px-12'>
@@ -104,6 +105,7 @@ export default function Login() {
         </div>
 
       </div>
+      <Footer/>
     </>
   )
 }

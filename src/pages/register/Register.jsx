@@ -3,6 +3,7 @@ import Header from '/src/pages/home/Header.jsx'
 import registerill from '/src/assets/registerill.png'
 import googleImg from '/src/assets/googleLogo.png'
 import facebookImg from '/src/assets/facebookLogo.png'
+import Footer from '/src/pages/home/Footer.jsx'
 
 export default function Register() {
   return (
@@ -38,6 +39,8 @@ export default function Register() {
           </div>
         </div>
       </div>
+      <Footer/>
+
     </>
 
   )
