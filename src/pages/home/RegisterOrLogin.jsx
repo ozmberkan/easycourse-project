@@ -43,7 +43,7 @@ export default function RegisterOrLogin() {
             <button className='bg-primary-color text-white w-28 h-12 rounded-md mt-5 font-montserrat' >Kayıt Ol</button>
             </Link>
             <Link to="/advantage" path="relative">
-            <button className='bg-primary-color text-white w-28 h-12 rounded-md mt-5 font-montserrat' >Paketler</button>
+            <button className='bg-primary-color text-white w-28 h-12 rounded-md mt-5 font-montserrat' >Avantajlar</button>
             </Link>
           </div>
         </div>
