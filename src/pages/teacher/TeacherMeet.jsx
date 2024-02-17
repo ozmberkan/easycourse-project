@@ -11,6 +11,7 @@ export default function TeacherMeet(props) {
   const [value, onChange] = useState(new Date());
 
   return (
+    <>
     <div className='w-full h-screen bg-[url("/src/assets/mainWallpaper.png")] bg-cover bg-center' >
       <div className='mx-auto container'>
         <TeacherHeader />
@@ -19,7 +20,7 @@ export default function TeacherMeet(props) {
 
         <div className='flex flex-col gap-y-6'>
           <Calendar onChange={onChange} value={value} />
-          <button className='bg-primary-color px-4 py-4 text-white rounded-3xl border font-montserrat font-semibold border-transparent hover:border hover:border-primary-color hover:bg-white hover:text-primary-color transition-colors' >SORGULA</button>
+          <button className='bg-primary-color px-4 py-4 text-white rounded-md border font-montserrat font-semibold border-transparent hover:border hover:border-primary-color hover:bg-white hover:text-primary-color transition-colors' >SORGULA</button>
           <div className='flex gap-x-6 justify-evenly items-center'>
             <button className='px-4 py-2 border w-full border-[#338A46] text-[#338A46] rounded-md font-montserrat font-semibold hover:bg-[#338A46] hover:text-white transition-colors'>Dersi Kabul Et</button>
             <button className='px-4 py-2 border w-full border-[#A63131] text-[#A63131] rounded-md font-montserrat font-semibold hover:bg-[#A63131] hover:text-white transition-colors'>Dersi Reddet</button>
@@ -28,7 +29,7 @@ export default function TeacherMeet(props) {
 
         <div className='w-full h-full border border-primary-color rounded-xl flex justify-start items-center py-12 '>
 
-          <div className='flex flex-col py-4 px-2 justify-center items-center  w-full border-r-[3px] border-primary-color'>
+          <div className='flex flex-col py-4  justify-center items-center  w-full '>
             <button className='bg-primary-color px-4 py-2 rounded-lg text-white font-montserrat w-[75%]'>Öğrenci</button>
             <div className='flex flex-col mt-12  w-full h-full py-4'>
 
@@ -60,10 +61,9 @@ export default function TeacherMeet(props) {
             </div>
 
           </div>
-          <div className='flex flex-col py-4 px-2 justify-center items-center  w-full border-r-[3px] border-primary-color'>
+          <div className='flex flex-col py-4 justify-center items-center  w-full '>
             <button className='bg-primary-color px-4 py-2 rounded-lg text-white font-montserrat w-[75%]'>Ders Saati</button>
             <div className='flex flex-col mt-12  w-full h-full py-4'>
-
               <div className='flex justify-center items-center w-full gap-x-4 py-2 px-4 text-center'>
                 <label htmlFor="berkan" className='text-primary-color font-semibold text-[17px] w-full'>10:00 - 10:45</label>
               </div>
@@ -87,7 +87,7 @@ export default function TeacherMeet(props) {
 
           </div>
 
-          <div className='flex flex-col py-4 px-2 justify-center items-center  w-full '>
+          <div className='flex flex-col py-4 justify-center items-center  w-full '>
             <button className='bg-primary-color px-4 py-2 rounded-lg text-white font-montserrat w-[75%]'>Dersin Konusu</button>
             <div className='flex flex-col mt-12  w-full h-full py-4'>
 
@@ -117,5 +117,6 @@ export default function TeacherMeet(props) {
 
       </div>
     </div>
+    </>
   )
 }

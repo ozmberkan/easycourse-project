@@ -42,13 +42,13 @@ export default function StudentProfile() {
                 <option value="one">Ferhat TOKER</option>
                 <option value="one">Buket YILDIRIM</option>
               </select>
+              <input type="time" className='w-full border-2 border-primary-color px-4 py-4 rounded-lg '/>
               <button className='bg-primary-color px-4 py-4 rounded-xl text-center text-white font-montserrat mb-5'>Ders Talebi Oluştur</button>
             </div>
             <div className=' w-full rounded-md h-[350px] flex flex-col gap-y-4 py-3'>
               <p className='w-full flex justify-between items-center bg-gray-200 py-4 px-4 rounded-lg shadow-lg font-montserrat'>Serkan ALICI - Matematik <span className='text-xl font-black cursor-pointer'>X</span></p>
               <p className='w-full flex justify-between items-center bg-gray-200 py-4 px-4 rounded-lg shadow-lg font-montserrat'>Eylül EKİN - Fizik <span className='text-xl font-black cursor-pointer'>X</span></p>
               <p className='w-full flex justify-between items-center bg-gray-200 py-4 px-4 rounded-lg shadow-lg font-montserrat'>Ferhat TOKER - Kimya <span className='text-xl font-black cursor-pointer'>X</span></p>
-              <p className='w-full flex justify-start items-center bg-gray-200 py-4 px-4 rounded-lg shadow-lg font-montserrat'>Buket YILDIRIM - Biyoloji</p>
             </div>
           </div>
 
