@@ -45,6 +45,9 @@ export default function Footer() {
               <Link to='/register'>
                 <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-full text-white hover:bg-white hover:text-primary-color hover:border-primary-color border transition-all'>Kayıt Ol</button>
               </Link>
+              <Link to='/advantage'>
+                <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-full text-white hover:bg-white hover:text-primary-color hover:border-primary-color border transition-all'>Avantajlar</button>
+              </Link>
               <Link to='/contact'>
                 <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-full text-white hover:bg-white hover:text-primary-color hover:border-primary-color border transition-all'>İletişim</button>
               </Link>
@@ -94,6 +97,9 @@ export default function Footer() {
           <Link to='/register'>
             <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-full text-white hover:bg-white hover:text-primary-color hover:border-primary-color border transition-all'>Kayıt Ol</button>
           </Link>
+          <Link to='/advantage'>
+                <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-full text-white hover:bg-white hover:text-primary-color hover:border-primary-color border transition-all'>Avantajlar</button>
+              </Link>
           <Link to='/contact'>
             <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-full text-white hover:bg-white hover:text-primary-color hover:border-primary-color border transition-all'>İletişim</button>
           </Link>

@@ -1,9 +1,11 @@
 import React from 'react'
 import Header from '/src/pages/home/Header.jsx'
 import mathteacher from '/src/assets/mathteacher.jpg'
+import Footer from '/src/pages/home/Footer'
 
 export default function TeacherRateProfile() {
   return (
+    <>
     <div className='w-full h-screen bg-[url("/src/assets/mainWallpaper.png")] bg-cover bg-center' >
       <div className='container mx-auto'>
         <Header />
@@ -40,5 +42,7 @@ export default function TeacherRateProfile() {
       </div>
 
     </div>
+    <Footer/>
+    </>
   )
 }

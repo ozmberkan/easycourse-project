@@ -18,7 +18,7 @@ export default function Advantage() {
         <div className='container mx-auto flex flex-col gap-y-6 px-4 py-4'>
           <Header />
           <div className=' w-full flex justify-center items-center flex-col'>
-            <h1 className='text-[35px] w-full flex justify-center items-center font-montserrat font-black mt-3 text-primary-color mb-6'>Avantajlar</h1>
+            <h1 className='text-[30px] w-full flex justify-center items-center font-montserrat font-black mt-3 text-primary-color mb-6'>Avantajlar</h1>
             <div className='w-full flex justify-center items-center flex-col gap-y-6'>
               <div className='w-full h-full bg-white rounded-2xl py-8 px-8 flex flex-col justify-start items-center relative'>
                 <div className='w-full bg-primary-color  flex justify-center items-center px-4 py-4 rounded-lg'>
@@ -108,7 +108,7 @@ export default function Advantage() {
         <div className='container mx-auto flex flex-col gap-y-6'>
           <Header />
           <div className=' w-full h-[750px] flex justify-start items-center flex-col gap-y-5'>
-            <h1 className='text-[30px] font-montserrat font-black mt-3 text-primary-color'>Avantajlar</h1>
+            <h1 className='text-[25px] font-montserrat font-black mt-3 mb-3 text-primary-color'>Avantajlar</h1>
             <div className='w-full h-full flex gap-x-24 justify-center items-center '>
               <div className='w-[500px] h-full bg-white rounded-2xl py-8 px-8 flex flex-col justify-start items-center relative'>
                 <div className='w-full bg-primary-color  flex justify-center items-center px-4 py-4 rounded-lg'>

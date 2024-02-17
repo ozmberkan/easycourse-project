@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '/src/pages/home/Header.jsx'
 import contactImg from '/src/assets/contactill.png'
 import useMedia from '/src/hooks/useMedia'
+import Footer from '../home/Footer'
 
 export default function Contact() {
 
@@ -32,6 +33,7 @@ export default function Contact() {
   }
 
   return (
+   <>
     <div className='w-full h-screen bg-[url("/src/assets/mainWallpaper.png")] bg-cover bg-center' >
       <div className='container mx-auto'>
         <Header />
@@ -49,5 +51,7 @@ export default function Contact() {
         </div>
       </div>
     </div>
+    <Footer/>
+   </>
   )
 }

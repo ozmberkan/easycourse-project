@@ -3,6 +3,7 @@ import { CiFilter } from "react-icons/ci";
 import Users from '/src/api/users.json';
 import { useEffect, useState, useRef } from 'react';
 import useMedia from '/src/hooks/useMedia';
+import Footer from '/src/pages/home/Footer.jsx';
 
 
 
@@ -63,8 +64,9 @@ export default function TeacherSearch() {
 
 
   return (
-    <div className='w-full h-screen bg-[url("/src/assets/mainWallpaper.png")] bg-cover bg-center' >
-      <div className='container mx-auto'>
+    <>
+    <div className='w-full h-[120vh] bg-[url("/src/assets/mainWallpaper.png")] bg-cover bg-center' >
+      <div className='container mx-auto pb-6'>
         <Header />
         <div className='w-full bg-white px-4 py-4 mt-12 rounded-md shadow-md flex justify-center items-center flex-col'>
           <div className='flex flex-col items-center justify-center gap-y-4'>
@@ -78,7 +80,7 @@ export default function TeacherSearch() {
               <CiFilter size={30} fill='#fff' />
             </div>
           </div>
-          <ul className='w-full flex flex-col gap-y-6 gap-x-6 mt-8'>
+          <ul className='w-full flex flex-col gap-y-6 gap-x-6 mt-8 '>
             {teacher.map((user, index) => (
               <li key={index} className='flex justify-start items-center text-primary-color w-full px-4 py-6 border rounded-lg gap-x-6 cursor-pointer hover:text-white hover:bg-primary-color transition-colors '>
                 <img src={user.avatar} alt="" className='w-12 h-12 rounded-full object-cover' />
@@ -90,5 +92,6 @@ export default function TeacherSearch() {
         </div>
       </div>
     </div>
+    </>
   )
 }

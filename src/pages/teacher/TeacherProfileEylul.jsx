@@ -5,8 +5,10 @@ import student from '/src/assets/student.jpg'
 import { Link } from 'react-router-dom';
 import TeacherHeaderTwo from './TeacherHeaderTwo';
 
+
 export default function TeacherProfile() {
   return (
+    <>
     <div className='w-full h-screen bg-[url("/src/assets/mainWallpaper.png")] bg-cover bg-center' >
     <div className='container mx-auto'>
       <TeacherHeaderTwo />
@@ -53,5 +55,6 @@ export default function TeacherProfile() {
       </div>
     </div>
   </div>
+  </>
   )
 }

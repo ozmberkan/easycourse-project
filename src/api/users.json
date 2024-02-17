@@ -26,5 +26,40 @@
         "surname": "Yıldırım",
         "lesson": "Türk Dii ve Edebiyatı",
         "avatar" : "assets/trteacher.jpg"
+    },
+    {
+        "id" : "5",
+        "name": "Fatma",
+        "surname": "Kaya",
+        "lesson": "Kimya",
+        "avatar" : "https://images.pexels.com/photos/3228213/pexels-photo-3228213.jpeg"
+    },
+    {
+        "id" : "6",
+        "name": "Selin",
+        "surname": "Kara",
+        "lesson": "Biyoloji",
+        "avatar" : "https://images.pexels.com/photos/2100063/pexels-photo-2100063.jpeg"
+    },
+    {
+        "id" : "7",
+        "name": "Ezgi",
+        "surname": "Kara",
+        "lesson": "Tarih",
+        "avatar" : "https://images.pexels.com/photos/3348748/pexels-photo-3348748.jpeg"
+    },
+    {
+        "id" : "8",
+        "name": "Sanem",
+        "surname": "Tan",
+        "lesson": "Coğrafya",
+        "avatar" : "https://images.pexels.com/photos/3812944/pexels-photo-3812944.jpeg"
+    },
+    {
+        "id" : "9",
+        "name": "Ayça",
+        "surname": "Polat",
+        "lesson": "Felsefe",
+        "avatar" : "https://images.pexels.com/photos/1385472/pexels-photo-1385472.jpeg"
     }
 ]

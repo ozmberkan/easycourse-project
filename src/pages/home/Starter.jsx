@@ -13,7 +13,7 @@ export default function Starter() {
   if (isMobile) {
     return (
         <>
-        <div className='mx-auto bg-white rounded-xl mt-6 flex justify-center items-center shadow-xl flex-col' >
+        <div className='mx-auto bg-white rounded-xl mt-6 flex justify-center items-center shadow-xl flex-col ' >
           <div className='w-[300px] flex justify-center items-center'>
             <img src={homeIll} alt="homeIll" />
           </div>
