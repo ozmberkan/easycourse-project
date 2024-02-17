@@ -18,9 +18,6 @@ export default function TeacherHeader() {
         </Link>
         <div className='flex gap-x-4'>
           <p className='border-primary-color border text-primary-color w-36  px-4 py-2 rounded-md font-montserrat flex justify-center items-center'>{time.toLocaleTimeString()}</p>
-          <Link>
-            <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat'>Derslerim</button>
-          </Link>
           <Link to="/teachermeet">
             <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat'>Randevularım</button>
           </Link>
