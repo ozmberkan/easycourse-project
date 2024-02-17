@@ -40,6 +40,7 @@ export default function Header() {
                     <h1 className='font-damion text-[50px] cursor-pointer'>easycourse</h1>
                 </Link>
                 <div className='flex gap-x-4'>
+                    <Link to="/advantage" className='bg-primary-color text-white  px-4 py-2 rounded-md font-montserrat flex justify-center items-center'>Avantajlar</Link>
                     <Link to="/login">
                         <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat'>Giriş Yap</button>
                     </Link>
