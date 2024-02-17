@@ -18,7 +18,7 @@ export default function Advantage() {
           <Header />
           <div className=' w-full flex justify-center items-center flex-col'>
             <h1 className='text-[35px] w-full flex justify-center items-center font-montserrat font-black mt-3 text-primary-color mb-6'>Avantajlar</h1>
-            <div className='w-full flex justify-center items-center flex-col '>
+            <div className='w-full flex justify-center items-center flex-col gap-y-6'>
               <div className='w-full h-full bg-white rounded-2xl py-8 px-8 flex flex-col justify-start items-center relative'>
                 <div className='w-full bg-primary-color  flex justify-center items-center px-4 py-4 rounded-lg'>
                   <p className='text-white text-2xl font-montserrat font-semibold'>Giriş Seviye</p>
