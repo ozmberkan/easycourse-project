@@ -97,7 +97,6 @@ export default function Advantage() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
     )
   }
