@@ -14,7 +14,7 @@ export default function Advantage() {
 
     return(
       <>
-      <div className='w-full h-screen bg-[url("/src/assets/mainWallpaper.png")] bg-cover bg-center ' >
+      <div className='w-full h-screen bg-[url("/src/assets/mainWallpaper.png")] bg-cover bg-center' >
         <div className='container mx-auto flex flex-col gap-y-6 px-4 py-4'>
           <Header />
           <div className=' w-full flex justify-center items-center flex-col'>
