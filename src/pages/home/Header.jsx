@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, } from 'react';
 import { Link } from "react-router-dom";
 import useMedia from '/src/hooks/useMedia'
 import { BottomSheet } from 'react-spring-bottom-sheet'
@@ -10,6 +10,11 @@ import { BsThreeDots } from "react-icons/bs";
 export default function Header() {
 
     const [open, setOpen] = useState(false)
+    const [time, setTime] = useState(new Date());
+
+    useEffect(() => {
+        setInterval(() => { setTime(new Date()) }, 1000);
+    }, [])
 
 
     const isMobile = useMedia(1024);
@@ -41,6 +46,7 @@ export default function Header() {
                     <h1 className='font-damion text-[50px] cursor-pointer'>easycourse</h1>
                 </Link>
                 <div className='flex gap-x-4'>
+                    <p className='border-primary-color border text-primary-color w-36  px-4 py-2 rounded-md font-montserrat flex justify-center items-center'>{time.toLocaleTimeString()}</p>
                     <Link to="/advantage" className='bg-primary-color text-white  px-4 py-2 rounded-md font-montserrat flex justify-center items-center'>Avantajlar</Link>
                     <Link to="/login">
                         <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat'>Giriş Yap</button>

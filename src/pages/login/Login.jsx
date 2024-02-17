@@ -128,6 +128,7 @@ export default function Login() {
               <form className='flex justify-center items-center flex-col w-full mt-4 gap-y-4'>
                 <input onChange={emailSet} type="email" placeholder='E-posta Giriniz...' className='w-full py-4 px-4 border-[2px] rounded-lg border-primary-color' />
                 <input onChange={passwordSet} type="password" placeholder='Parola Giriniz...' className='w-full py-4 px-4 border-[2px] rounded-lg border-primary-color' />
+                <input type="color" className='w-full py-4 px-4 border-[2px] rounded-lg border-primary-color' />
                 <input onChange={teacherSet} ref={teacherRef} type="text" placeholder='Eğitmen kodunu Giriniz' className='w-full py-4 px-4 border-[2px] rounded-lg border-primary-color' />
                 <div className='flex gap-x-2 w-full '>
                   <input type="checkbox" id='checkbox' name='checkbox' />
