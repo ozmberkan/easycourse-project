@@ -67,7 +67,7 @@ export default function Starter() {
           </div>
         </div>
       </div>
-      <div className=' flex justify-center items-center py-4 px-4 mt-4'>
+      <div className=' flex justify-center items-center py-4 px-4 mt-24'>
         <a href="#starter" className='bg-primary-color px-4 py-4 rounded-full text-white animate-bounce'><FaArrowDown size={30} /></a>
       </div>
     </>
