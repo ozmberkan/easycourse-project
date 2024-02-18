@@ -45,7 +45,7 @@ export default function StudentProfile() {
                   <option value="one">Ferhat TOKER</option>
                   <option value="one">Buket YILDIRIM</option>
                 </select>
-                <input type="time" className='w-full border-2 border-primary-color px-4 py-4 rounded-l  ' />
+                <input type="time" className='w-full border-2 border-primary-color px-4 py-4 rounded-lg  ' />
                 <button className='bg-primary-color px-4 py-4 rounded-xl text-center text-white font-montserrat mb-5'>Ders Talebi Oluştur</button>
               </div>
               <div className=' w-full rounded-md h-[350px] flex flex-col gap-y-4 py-3'>
