@@ -21,9 +21,9 @@ const [time, setTime] = useState(new Date());
             <Link>
               <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat'>Derslerim</button>
             </Link>
-            <Link>
-              <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat'>Bildirimlerim</button>
-            </Link>
+            <a >
+            <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat'>Hatırlatıcılarım</button>
+          </a>
             <Link to="/teacherprofiletwo">
               <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat'>Profilim</button>
             </Link>
