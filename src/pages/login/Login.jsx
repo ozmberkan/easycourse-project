@@ -4,9 +4,10 @@ import loginImage from '/src/assets/loginill.png'
 import { Switch } from '@headlessui/react'
 import googleImg from '/src/assets/googleLogo.png'
 import facebookImg from '/src/assets/facebookLogo.png'
-import { useNavigate } from 'react-router-dom'
+import { Link,useNavigate } from 'react-router-dom'
 import Footer from '/src/pages/home/Footer.jsx'
 import useMedia from '/src/hooks/useMedia'
+
 
 
 
@@ -76,7 +77,7 @@ export default function Login() {
                 <h1 className='text-primary-color font-montserrat font-bold text-[20px] mb-4'>Giriş Yap</h1>
                 <div>
                   <Switch onClick={enabledClick} checked={enabled} onChange={setEnabled} className={`${enabled ? 'bg-primary-color' : 'bg-primary-color'} relative inline-flex h-[40px] w-[200px] items-center rounded-full`}>
-                    <span ref={studentOrTeacherRef} className={`${enabled ? 'translate-x-24' : 'translate-x-1'}  w-[100px] h-[30px] transform rounded-full bg-white transition-all duration-500 inline-flex justify-center items-center text-primary-color font-montserrat font-semibold`} />
+                    <span ref={studentOrTeacherRef} className={`${enabled ? 'translate-x-[94px]' : 'translate-x-[7px]'}  w-[100px] h-[30px] transform rounded-full bg-white transition-all duration-500 inline-flex justify-center items-center text-primary-color font-montserrat font-semibold`} />
                   </Switch>
                 </div>
                 <form className='flex justify-center items-center flex-col w-full mt-4 gap-y-4'>
@@ -89,15 +90,18 @@ export default function Login() {
                   </div>
                   <button onClick={handleLogin} className='w-full py-4 bg-primary-color text-white rounded-lg font-montserrat font-bold'>Giriş Yap</button>
                   <div className='w-full flex gap-x-4 flex-col gap-y-2'>
-                  <a href="#" className='text-primary-color font-montserrat font-semibold border border-primary-color py-3 text-center w-full  rounded-lg flex gap-x-4 text-sm justify-center items-center'>
-                    <img src={googleImg} alt="" className='w-4 h-4' />
-                    <p>Google ile Devam Et!</p>
-                  </a>
-                  <a href="#" className='text-primary-color font-montserrat font-semibold border border-primary-color py-3 text-center  w-full rounded-lg flex gap-x-4 text-sm justify-center items-center'>
-                    <img src={facebookImg} alt="" className='w-4 h-4' />
-                    <p>Facebook ile Devam Et!</p>
-                  </a>
-                </div>
+                    <a href="#" className='text-primary-color font-montserrat font-semibold border border-primary-color py-3 text-center w-full  rounded-lg flex gap-x-4 text-sm justify-center items-center'>
+                      <img src={googleImg} alt="" className='w-4 h-4' />
+                      <p>Google ile Devam Et!</p>
+                    </a>
+                    <a href="#" className='text-primary-color font-montserrat font-semibold border border-primary-color py-3 text-center  w-full rounded-lg flex gap-x-4 text-sm justify-center items-center'>
+                      <img src={facebookImg} alt="" className='w-4 h-4' />
+                      <p>Facebook ile Devam Et!</p>
+                    </a>
+                  </div>
+                  <Link to="/register" href="#" className='font-montserrat font-semibold border bg-primary-color text-white py-4 w-full rounded-lg flex gap-x-4 text-sm justify-center items-center'>
+                  <p>Bir hesabın yok mu? Kayıt ol!</p>
+                </Link>
                 </form>
               </div>
             </div>
@@ -122,7 +126,7 @@ export default function Login() {
               <h1 className='text-primary-color font-montserrat font-bold text-[40px] mb-4'>Giriş Yap</h1>
               <div>
                 <Switch onClick={enabledClick} checked={enabled} onChange={setEnabled} className={`${enabled ? 'bg-primary-color' : 'bg-primary-color'} relative inline-flex h-[50px] w-[305px] items-center rounded-full`}>
-                  <span ref={studentOrTeacherRef} className={`${enabled ? 'translate-x-40' : 'translate-x-1'} h-[40px] w-[140px] transform rounded-full bg-white transition-all duration-500 inline-flex justify-center items-center text-primary-color font-montserrat font-semibold`} />
+                  <span ref={studentOrTeacherRef} className={`${enabled ? 'translate-x-[158px]' : 'translate-x-2'} h-[40px] w-[140px] transform rounded-full bg-white transition-all duration-500 inline-flex justify-center items-center text-primary-color font-montserrat font-semibold`} />
                 </Switch>
               </div>
               <form className='flex justify-center items-center flex-col w-full mt-4 gap-y-4'>
@@ -144,6 +148,9 @@ export default function Login() {
                     <p>Facebook ile Devam Et!</p>
                   </a>
                 </div>
+                <Link to="/register" href="#" className='font-montserrat font-semibold border bg-primary-color text-white py-4 w-full rounded-lg flex gap-x-4 text-sm justify-center items-center'>
+                  <p>Bir hesabın yok mu? Kayıt ol!</p>
+                </Link>
               </form>
             </div>
 
