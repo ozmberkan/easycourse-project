@@ -56,11 +56,11 @@ export default function TeacherMeet(props) {
                           </div>
                           <div className='flex flex-col gap-y-4 justify-center items-center'>
                             <span className='px-2 py-2 text-white bg-primary-color rounded-lg font-semibold text-base w-full text-center'>Hatırlatma Tarihi</span>
-                            <input type='date' className='px-2 py-2 text-[#898989] w-full bg-white border rounded-lg focus:outline-none'></input>
+                            <input required type='date' className='px-2 py-2 text-[#898989] w-full bg-white border rounded-lg focus:outline-none'></input>
                           </div>
                           <div className='flex flex-col gap-y-4 justify-center items-center'>
                             <span className='px-2 py-2 text-white bg-primary-color rounded-lg font-semibold text-base w-full text-center'>Hatırlatma Saati</span>
-                            <input type='time' className='px-2 py-2 text-[#898989] w-full bg-white border rounded-lg focus:outline-none'></input>
+                            <input required type='time' className='px-2 py-2 text-[#898989] w-full bg-white border rounded-lg focus:outline-none'></input>
                           </div>
                           <div className='flex flex-col gap-y-4 justify-center items-center'>
                             <span className='px-2 py-2 text-white bg-primary-color rounded-lg font-semibold text-base w-full text-center'>SMS Gönd. mi?</span>
@@ -71,7 +71,7 @@ export default function TeacherMeet(props) {
                         </div>
                         <div className='flex flex-col items-center justify-center bottom-0 absolute right-0 w-full gap-y-3'>
                           <hr className='bg-gray-700 w-full' />
-                          <button className='bg-[#338A46] flex justify-center items-center rounded-lg text-white font-montserrat font-black py-2 px-6 mb-4'> ONAYLA</button>
+                          <button onClick={() => setIsOpen(false)} className='bg-[#338A46] flex justify-center items-center rounded-lg text-white font-montserrat font-black py-2 px-6 mb-4'> ONAYLA</button>
                         </div>
                       </div>
                     </Dialog.Title>
