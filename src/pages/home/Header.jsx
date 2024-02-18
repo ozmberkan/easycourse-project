@@ -1,9 +1,9 @@
-import React, { useState, useEffect, } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import useMedia from '/src/hooks/useMedia'
 import { BottomSheet } from 'react-spring-bottom-sheet'
 import 'react-spring-bottom-sheet/dist/style.css'
-import { BsThreeDots,BsClockFill } from "react-icons/bs";
+import { BsThreeDots, BsClockFill } from "react-icons/bs";
 
 
 
@@ -49,7 +49,7 @@ export default function Header() {
                     <p className='border-primary-color gap-x-4 border text-primary-color w-36  px-4 py-2 rounded-md font-montserrat flex justify-center items-center'>
                         <BsClockFill />
                         {time.toLocaleTimeString()}
-                        </p>
+                    </p>
                     <Link to="/advantage" className='bg-primary-color text-white  px-4 py-2 rounded-md font-montserrat flex justify-center items-center'>Avantajlar</Link>
                     <Link to="/login">
                         <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat'>Giriş Yap</button>
