@@ -41,7 +41,7 @@ export default function Search() {
                   <FaStar size={13} />
                   <FaStar size={13} />
                 </div>
-                <Link to="/teacherratetwo" className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-24 text-white flex justify-center items-center'>Profil</Link>
+                <Link to="/teacherrate" className='bg-primary-color px-4 py-2 rounded-md font-montserrat w-24 text-white flex justify-center items-center'>Profil</Link>
               </div>
               <div className='bg-white w-full h-full object-cover'>
                 <img src={mathTeacher} alt="" className='object-cover w-full h-full rounded-lg cursor-pointer' />

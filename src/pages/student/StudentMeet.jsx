@@ -18,7 +18,7 @@ export default function StudentMeet(props) {
         <div className='mx-auto container'>
           <StudentHeader />
         </div>
-        <div className='bg-white px-4 py-12 container mx-auto mt-24 flex justify-start items-center  rounded-lg  flex-col'>
+        <div className='bg-white px-4 py-12 container mx-auto mt-6 flex justify-start items-center  rounded-lg  flex-col'>
 
           <div className='flex flex-col gap-y-6'>
             <Calendar onChange={onChange} value={value} />
