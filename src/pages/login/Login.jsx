@@ -4,10 +4,10 @@ import loginImage from '/src/assets/loginill.png'
 import { Switch } from '@headlessui/react'
 import googleImg from '/src/assets/googleLogo.png'
 import facebookImg from '/src/assets/facebookLogo.png'
-import { Link,useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Footer from '/src/pages/home/Footer.jsx'
 import useMedia from '/src/hooks/useMedia'
-
+import toast, { Toaster } from 'react-hot-toast';
 
 
 
@@ -29,33 +29,62 @@ export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [teacherCode, setTeacherCode] = useState('');
+  const notify = (e) => {
+    e.preventDefault()
+    toast('Here is your toast.')
+  };
+
 
   const emailSet = (e) => { setEmail(e.target.value) }
   const passwordSet = (e) => { setPassword(e.target.value) }
   const teacherSet = (e) => { setTeacherCode(e.target.value) }
   const enabledClick = () => { setEnabled(!enabled) }
 
-  const handleLogin = () => {
+  const handleLogin = (e) => {
+    e.preventDefault()
+
     if (email === '' && password === '' && teacherCode === '') {
-      alert('Lütfen tüm alanları doldurunuz!')
+
+      toast.error('Lütfen alanı boş bırakmayınız');
+
     }
     else if (email === '' && password === '' && enabled && teacherCode === '') {
-      alert('Lütfen tüm alanları doldurunuz!')
+      toast.error('Lütfen alanı boş bırakmayınız');
+
     }
     else if (email != 'berkan@ozmen' && password != '123' && !enabled) {
-      alert('Öğrenci girişi yapmak için lütfen {berkan@ozmen} ve {123} parolasını kullanınız.')
+      toast.error(
+        "Kullanıcı Adı : berkan@ozmen \nParola : 123",
+        {
+          duration: 2000,
+        }
+      );
     }
     else if ((email != 'serkan@alici' || email != 'eylul@ekin') && password != '123' && enabled && teacherCode != '123') {
-      alert('Eğitmen girişi yapmak için lütfen {serkan@alici} ya da {eylul@ekin}, {123} parolasını ve {123} kodunu kullanınız.')
+      toast.error(
+        "\rKullanıcı Adı : serkan@alici - eylul@ekin \nParola : 123 \nEğitmen kodu : 123",
+        {
+          duration: 2000,
+        }
+      );
     }
 
     else if (email === 'berkan@ozmen' && password === '123' && !enabled) {
-      navigate('/studentprofile')
+      toast.success('Giriş Başarılı Yönlendiriliyorsun...')
+      setInterval(() => {
+        navigate('/studentprofile')
+      }, 2000);
     } else if (email === 'serkan@alici' && password === '123' && enabled && teacherCode === '123') {
-      navigate('/teacherprofile')
+      toast.success('Giriş Başarılı Yönlendiriliyorsun...')
+      setInterval(() => {
+        navigate('/teacherprofile')
+      }, 2000);
     }
     else if (email === 'eylul@ekin' && password === '123' && enabled && teacherCode === '123') {
-      navigate('/teacherprofiletwo')
+      toast.success('Giriş Başarılı Yönlendiriliyorsun...')
+      setInterval(() => {
+        navigate('/teacherprofiletwo')
+      }, 2000);
     }
   }
 
@@ -89,6 +118,7 @@ export default function Login() {
                     <label name="checkbox" htmlFor='checkbox'>Beni Hatırla</label>
                   </div>
                   <button onClick={handleLogin} className='w-full py-4 bg-primary-color text-white rounded-lg font-montserrat font-bold'>Giriş Yap</button>
+                  <Toaster />
                   <div className='w-full flex gap-x-4 flex-col gap-y-2'>
                     <a href="#" className='text-primary-color font-montserrat font-semibold border border-primary-color py-3 text-center w-full  rounded-lg flex gap-x-4 text-sm justify-center items-center'>
                       <img src={googleImg} alt="" className='w-4 h-4' />
@@ -100,8 +130,8 @@ export default function Login() {
                     </a>
                   </div>
                   <Link to="/register" href="#" className='font-montserrat font-semibold border bg-primary-color text-white py-4 w-full rounded-lg flex gap-x-4 text-sm justify-center items-center'>
-                  <p>Bir hesabın yok mu? Kayıt ol!</p>
-                </Link>
+                    <p>Bir hesabın yok mu? Kayıt ol!</p>
+                  </Link>
                 </form>
               </div>
             </div>
@@ -138,6 +168,7 @@ export default function Login() {
                   <label name="checkbox" htmlFor='checkbox'>Beni Hatırla</label>
                 </div>
                 <button onClick={handleLogin} className='w-full py-4 bg-primary-color text-white rounded-lg font-montserrat font-bold'>Giriş Yap</button>
+                <Toaster />
                 <div className='w-full flex gap-x-4'>
                   <a href="#" className='text-primary-color font-montserrat font-semibold border border-primary-color py-6 px-12 w-full  rounded-lg flex gap-x-4 text-sm justify-center items-center'>
                     <img src={googleImg} alt="" className='w-4 h-4' />
