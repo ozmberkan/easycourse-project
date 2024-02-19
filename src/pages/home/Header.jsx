@@ -27,7 +27,7 @@ export default function Header() {
                     <button onClick={() => setOpen(true)} className='text-black text-[40px] mr-2 flex justify-center items-center'><BsThreeDots /></button>
                 </nav>
                 <BottomSheet open={open} onDismiss={() => setOpen(false)}>
-                    <div className='flex flex-col w-full px-4 py-4 gap-y-4'>
+                    <div className='flex flex-col w-full px-4 py-4 gap-y-4 '>
                         <Link to="/login" className='text-primary-color  border border-primary-color  px-4 py-2 rounded-md font-montserrat flex justify-center items-center'>Giriş Yap</Link>
                         <Link to="/register" className='text-primary-color  border border-primary-color  px-4 py-2 rounded-md font-montserrat flex justify-center items-center'>Kayıt Ol</Link>
                         <Link to="/advantage" className='text-primary-color border border-primary-color  px-4 py-2 rounded-md font-montserrat flex justify-center items-center'>Avantajlar</Link>
