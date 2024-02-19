@@ -22,10 +22,10 @@ export default function RegisterOrLogin() {
     if(email === '' && password === ''){
       alert('Lütfen tüm alanları doldurunuz!')
     }
-    else if(email != 'berkanozmen' && password != '123'){
+    else if(email != 'berkan@ozmen' && password != '123'){
       alert('Öğrenci girişi yapmak için lütfen {erkan@ozmen} ve {123} parolasını kullanınız.')
     }
-    else if(email === 'berkanozmen' && password === '123'){
+    else if(email === 'berkan@ozmen' && password === '123'){
       navigate('/studentprofile')
   }
 }

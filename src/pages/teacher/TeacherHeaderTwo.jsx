@@ -49,12 +49,11 @@ export default function Header() {
             <BsClockFill />
             {time.toLocaleTimeString()}
           </p>
-          <Link to="/advantage" className='bg-primary-color text-white  px-4 py-2 rounded-md font-montserrat flex justify-center items-center'>Avantajlar</Link>
-          <Link to="/login">
-            <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat'>Giriş Yap</button>
+          <Link to="/teachermeet">
+            <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat'>Randevularım</button>
           </Link>
-          <Link to="/register">
-            <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat'>Kayıt Ol</button>
+          <Link to="/teacherprofiletwo">
+            <button className='bg-primary-color px-4 py-2 rounded-md font-montserrat'>Profilim</button>
           </Link>
         </div>
       </nav>
