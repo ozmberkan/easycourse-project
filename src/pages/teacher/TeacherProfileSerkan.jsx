@@ -21,10 +21,10 @@ export default function TeacherProfile() {
               <p className='text-[#A8AEAF] text-xl'><span className='text-primary-color font-montserrat text-md font-semibold'>t</span> - @serkanalici</p>
               <img src={teacherImg} alt="" className='rounded-xl w-full h-[350px] object-cover' />
               <div className='grid grid-cols-2 grid-rows-2 gap-x-4 gap-y-4 items-center'>
-                <button className='bg-primary-color px-4 py-4 rounded-xl w-full h-[50px] text-center text-white font-montserrat'>Şifre Değiştir</button>
-                <button className='bg-primary-color px-4 py-4 rounded-xl w-full h-[50px] text-center text-white font-montserrat'>Bildirim Ayarları</button>
-                <button className='bg-primary-color px-4 py-4 rounded-xl w-full h-[50px] text-center text-white font-montserrat'>E-Posta Değiştir</button>
-                <Link to="/teacherrate" className='bg-primary-color px-4 py-4 rounded-xl text-center text-white font-montserrat'>Ücretlendirme</Link>
+                <button className='bg-primary-color px-4 py-4 rounded-xl w-full h-[50px] text-center text-white font-montserrat text-sm'>Şifre Değiştir</button>
+                <button className='bg-primary-color px-4 py-4 rounded-xl w-full h-[50px] text-center text-white font-montserrat text-sm'>Bildirim Ayarları</button>
+                <button className='bg-primary-color px-4 py-4 rounded-xl w-full h-[50px] text-center text-white font-montserrat text-sm'>E-Posta Değiştir</button>
+                <Link to="/teacherrate" className='bg-primary-color px-4 py-4 rounded-xl text-center text-white font-montserrat text-sm'>Ücretlendirme</Link>
 
               </div>
               <button className='w-full border border-primary-color px-4 py-4 rounded-md font-montserrat mt-4'>Profil Resmi Ekle/Değiştir</button>

@@ -34,10 +34,10 @@ export default function TeacherMeet(props) {
                 <div className="fixed inset-0 flex w-screen items-center justify-center p-4">
                   <Dialog.Panel className="mx-auto rounded bg-white">
                     <Dialog.Title>
-                      <div className='mx-auto container bg-white rounded-xl w-[400px] relative px-4 py-4'>
-                        <h1 className='text-primary-color font-montserrat  text-[24px] text-center font-black uppercase mb-4'>Hatırlatıcı Ekle</h1>
+                      <div className='mx-auto container bg-white rounded-xl w-[350px] h-[800px] relative px-4 py-4'>
+                        <h1 className='text-primary-color font-montserrat  text-[24px] text-center font-black uppercase '>Hatırlatıcı Ekle</h1>
                         <hr className='mt-1 mb-1' />
-                        <div className='flex flex-col gap-y-6 py-12'>
+                        <div className='flex flex-col gap-y-4 py-2 mx-auto my-auto'>
                           <div className='flex flex-col gap-y-4 justify-center items-center'>
                             <span className='px-2 py-2 text-white bg-primary-color rounded-lg font-semibold text-base w-full text-center'>Seçilen Öğrenci</span>
                             <button disabled className='px-2 py-2 text-[#898989] w-full bg-[#979797]/50 rounded-lg cursor-pointer '>Berkan ÖZMEN</button>
@@ -60,7 +60,7 @@ export default function TeacherMeet(props) {
                           </div>
                           <div className='flex flex-col gap-y-4 justify-center items-center'>
                             <span className='px-2 py-2 text-white bg-primary-color rounded-lg font-semibold text-base w-full text-center'>SMS Gönd. mi?</span>
-                            <div className='w-full px-4 py-2 mt-1'>
+                            <div className='w-full px-4 '>
                               <input type='checkbox' className='px-2 py-2 text-[#898989] w-full bg-yellow-500 border rounded-lg focus:outline-none'/>
                             </div>
                           </div>
