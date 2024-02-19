@@ -17,8 +17,6 @@ export default function TeacherMeet(props) {
   const [isOpen, setIsOpen] = useState(false)
 
 
-  }
-
 
   const isMobile = useMedia(1024)
 
