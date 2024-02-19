@@ -6,6 +6,8 @@ import { useState } from 'react';
 import { FaBell } from "react-icons/fa";
 import { Dialog, Transition } from '@headlessui/react'
 import useMedia from '/src/hooks/useMedia'
+import toast, { Toaster } from 'react-hot-toast';
+
 
 
 export default function TeacherMeet(props) {
@@ -14,10 +16,14 @@ export default function TeacherMeet(props) {
   const [value, onChange] = useState(new Date());
   const [isOpen, setIsOpen] = useState(false)
 
+
+  }
+
+
   const isMobile = useMedia(1024)
-  
-  if(isMobile){
-    return(
+
+  if (isMobile) {
+    return (
       <div className='w-full h-screen bg-[url("/src/assets/mainWallpaper.png")] bg-cover bg-center px-4 py-4' >
         <div className='mx-auto container'>
           <TeacherHeader />
@@ -61,7 +67,7 @@ export default function TeacherMeet(props) {
                           <div className='flex flex-col gap-y-4 justify-center items-center '>
                             <span className='px-1 py-1 text-white bg-primary-color rounded-lg font-semibold text-xs w-full text-center'>SMS Gönd. mi?</span>
                             <div className='w-full px-4 '>
-                              <input type='checkbox' className='px-1 py-1 text-[#898989] w-full bg-yellow-500 border rounded-lg focus:outline-none'/>
+                              <input type='checkbox' className='px-1 py-1 text-[#898989] w-full bg-yellow-500 border rounded-lg focus:outline-none' />
                             </div>
                           </div>
                         </div>
@@ -229,105 +235,105 @@ export default function TeacherMeet(props) {
                         <div className='flex flex-col items-center justify-center bottom-0 absolute right-0 w-full gap-y-3'>
                           <hr className='bg-gray-700 w-full' />
                           <button onClick={() => setIsOpen(false)} className='bg-[#338A46] flex justify-center items-center rounded-lg text-white font-montserrat font-black py-2 px-6 mb-4'> ONAYLA</button>
-                        </div>
                       </div>
-                    </Dialog.Title>
-                  </Dialog.Panel>
-                </div>
-              </Dialog>
+                    </div>
+                  </Dialog.Title>
+                </Dialog.Panel>
             </div>
+          </Dialog>
+        </div>
+      </div>
+
+      <div className='w-full h-full border border-primary-color rounded-xl flex justify-start items-center  '>
+
+        <div className='flex flex-col py-4  justify-center items-center  w-full '>
+          <button className='bg-primary-color px-4 py-2 rounded-lg text-white font-montserrat w-[75%]'>Öğrenci</button>
+          <div className='flex flex-col mt-12  w-full h-full py-4'>
+
+            <div className='flex justify-center items-center w-full gap-x-4 py-2 px-4 '>
+              <input type="checkbox" name="berkan" id="berkan" />
+              <label htmlFor="berkan" className='text-primary-color font-semibold text-[17px] w-full'>Berkan ÖZMEN</label>
+            </div>
+            <div className='flex justify-center items-center bg-[#D9D9D9] py-2 px-4 gap-x-4 '>
+              <input type="checkbox" name="mehmet" id="mehmet" />
+              <label htmlFor="mehmet" className='text-primary-color font-semibold text-[17px] w-full'>Mehmet KILIÇ</label>
+            </div>
+            <div className='flex justify-center items-center  py-2 px-4 gap-x-4 '>
+              <input type="checkbox" name="ahmet" id="ahmet" />
+              <label htmlFor="ahmet" className='text-primary-color font-semibold text-[17px] w-full'>Ahmet İLÇİ</label>
+            </div>
+            <div className='flex justify-center items-center bg-[#D9D9D9] py-2 px-4 gap-x-4 '>
+              <input type="checkbox" name="sude" id="sude" />
+              <label htmlFor="sude" className='text-primary-color font-semibold text-[17px] w-full'>Sude AKÇETUTAN</label>
+            </div>
+            <div className='flex justify-center items-center  py-2 px-4 gap-x-4 '>
+              <input type="checkbox" name="furkan" id="furkan" />
+              <label htmlFor="furkan" className='text-primary-color font-semibold text-[17px] w-full'>Furkan ÖZMEN</label>
+            </div>
+            <div className='flex justify-center items-center bg-[#D9D9D9] py-2 px-4 gap-x-4 '>
+              <input type="checkbox" name="omer" id="omer" />
+              <label htmlFor="omer" className='text-primary-color font-semibold text-[17px] w-full'>Ömer UĞURLU</label>
+            </div>
+
           </div>
 
-          <div className='w-full h-full border border-primary-color rounded-xl flex justify-start items-center  '>
-
-            <div className='flex flex-col py-4  justify-center items-center  w-full '>
-              <button className='bg-primary-color px-4 py-2 rounded-lg text-white font-montserrat w-[75%]'>Öğrenci</button>
-              <div className='flex flex-col mt-12  w-full h-full py-4'>
-
-                <div className='flex justify-center items-center w-full gap-x-4 py-2 px-4 '>
-                  <input type="checkbox" name="berkan" id="berkan" />
-                  <label htmlFor="berkan" className='text-primary-color font-semibold text-[17px] w-full'>Berkan ÖZMEN</label>
-                </div>
-                <div className='flex justify-center items-center bg-[#D9D9D9] py-2 px-4 gap-x-4 '>
-                  <input type="checkbox" name="mehmet" id="mehmet" />
-                  <label htmlFor="mehmet" className='text-primary-color font-semibold text-[17px] w-full'>Mehmet KILIÇ</label>
-                </div>
-                <div className='flex justify-center items-center  py-2 px-4 gap-x-4 '>
-                  <input type="checkbox" name="ahmet" id="ahmet" />
-                  <label htmlFor="ahmet" className='text-primary-color font-semibold text-[17px] w-full'>Ahmet İLÇİ</label>
-                </div>
-                <div className='flex justify-center items-center bg-[#D9D9D9] py-2 px-4 gap-x-4 '>
-                  <input type="checkbox" name="sude" id="sude" />
-                  <label htmlFor="sude" className='text-primary-color font-semibold text-[17px] w-full'>Sude AKÇETUTAN</label>
-                </div>
-                <div className='flex justify-center items-center  py-2 px-4 gap-x-4 '>
-                  <input type="checkbox" name="furkan" id="furkan" />
-                  <label htmlFor="furkan" className='text-primary-color font-semibold text-[17px] w-full'>Furkan ÖZMEN</label>
-                </div>
-                <div className='flex justify-center items-center bg-[#D9D9D9] py-2 px-4 gap-x-4 '>
-                  <input type="checkbox" name="omer" id="omer" />
-                  <label htmlFor="omer" className='text-primary-color font-semibold text-[17px] w-full'>Ömer UĞURLU</label>
-                </div>
-
-              </div>
-
+        </div>
+        <div className='flex flex-col py-4 justify-center items-center  w-full '>
+          <button className='bg-primary-color px-4 py-2 rounded-lg text-white font-montserrat w-[75%]'>Ders Saati</button>
+          <div className='flex flex-col mt-12  w-full h-full py-4'>
+            <div className='flex justify-center items-center w-full gap-x-4 py-2 px-4 text-center'>
+              <label htmlFor="berkan" className='text-primary-color font-semibold text-[17px] w-full'>10:00 - 10:45</label>
             </div>
-            <div className='flex flex-col py-4 justify-center items-center  w-full '>
-              <button className='bg-primary-color px-4 py-2 rounded-lg text-white font-montserrat w-[75%]'>Ders Saati</button>
-              <div className='flex flex-col mt-12  w-full h-full py-4'>
-                <div className='flex justify-center items-center w-full gap-x-4 py-2 px-4 text-center'>
-                  <label htmlFor="berkan" className='text-primary-color font-semibold text-[17px] w-full'>10:00 - 10:45</label>
-                </div>
-                <div className='flex justify-center items-center bg-[#D9D9D9] py-2 px-4 gap-x-4 text-center'>
-                  <label htmlFor="berkan" className='text-primary-color font-semibold text-[17px] w-full'>11:00 - 11:45</label>
-                </div>
-                <div className='flex justify-center items-center  py-2 px-4 gap-x-4 text-center'>
-                  <label htmlFor="berkan" className='text-primary-color font-semibold text-[17px] w-full'>13:00 - 13:45</label>
-                </div>
-                <div className='flex justify-center items-center bg-[#D9D9D9] py-2 px-4 gap-x-4 text-center'>
-                  <label htmlFor="berkan" className='text-primary-color font-semibold text-[17px] w-full'>14:00 - 14:45</label>
-                </div>
-                <div className='flex justify-center items-center  py-2 px-4 gap-x-4 text-center'>
-                  <label htmlFor="berkan" className='text-primary-color font-semibold text-[17px] w-full'>15:00 - 15:45</label>
-                </div>
-                <div className='flex justify-center items-center bg-[#D9D9D9] py-2 px-4 gap-x-4 text-center'>
-                  <label htmlFor="berkan" className='text-primary-color font-semibold text-[17px] w-full'>17:00 - 17:45</label>
-                </div>
-
-              </div>
-
+            <div className='flex justify-center items-center bg-[#D9D9D9] py-2 px-4 gap-x-4 text-center'>
+              <label htmlFor="berkan" className='text-primary-color font-semibold text-[17px] w-full'>11:00 - 11:45</label>
+            </div>
+            <div className='flex justify-center items-center  py-2 px-4 gap-x-4 text-center'>
+              <label htmlFor="berkan" className='text-primary-color font-semibold text-[17px] w-full'>13:00 - 13:45</label>
+            </div>
+            <div className='flex justify-center items-center bg-[#D9D9D9] py-2 px-4 gap-x-4 text-center'>
+              <label htmlFor="berkan" className='text-primary-color font-semibold text-[17px] w-full'>14:00 - 14:45</label>
+            </div>
+            <div className='flex justify-center items-center  py-2 px-4 gap-x-4 text-center'>
+              <label htmlFor="berkan" className='text-primary-color font-semibold text-[17px] w-full'>15:00 - 15:45</label>
+            </div>
+            <div className='flex justify-center items-center bg-[#D9D9D9] py-2 px-4 gap-x-4 text-center'>
+              <label htmlFor="berkan" className='text-primary-color font-semibold text-[17px] w-full'>17:00 - 17:45</label>
             </div>
 
-            <div className='flex flex-col py-4 justify-center items-center  w-full '>
-              <button className='bg-primary-color px-4 py-2 rounded-lg text-white font-montserrat w-[75%]'>Dersin Konusu</button>
-              <div className='flex flex-col mt-12  w-full h-full py-4'>
+          </div>
 
-                <div className='flex justify-center items-center w-full gap-x-4 py-2 px-4 text-center'>
-                  <label htmlFor="berkan" className='text-primary-color font-semibold text-[17px] w-full'>Olasılık</label>
-                </div>
-                <div className='flex justify-center items-center bg-[#D9D9D9] py-2 px-4 gap-x-4 text-center'>
-                  <label htmlFor="berkan" className='text-primary-color font-semibold text-[17px] w-full'>Logaritma</label>
-                </div>
-                <div className='flex justify-center items-center  py-2 px-4 gap-x-4 text-center'>
-                  <label htmlFor="berkan" className='text-primary-color font-semibold text-[17px] w-full'>İntegral</label>
-                </div>
-                <div className='flex justify-center items-center bg-[#D9D9D9] py-2 px-4 gap-x-4 text-center'>
-                  <label htmlFor="berkan" className='text-primary-color font-semibold text-[17px] w-full'>Türev</label>
-                </div>
-                <div className='flex justify-center items-center  py-2 px-4 gap-x-4 text-center'>
-                  <label htmlFor="berkan" className='text-primary-color font-semibold text-[17px] w-full'>Türev</label>
-                </div>
-                <div className='flex justify-center items-center bg-[#D9D9D9] py-2 px-4 gap-x-4 text-center'>
-                  <label htmlFor="berkan" className='text-primary-color font-semibold text-[17px] w-full'>Logaritma</label>
-                </div>
+        </div>
 
-              </div>
+        <div className='flex flex-col py-4 justify-center items-center  w-full '>
+          <button className='bg-primary-color px-4 py-2 rounded-lg text-white font-montserrat w-[75%]'>Dersin Konusu</button>
+          <div className='flex flex-col mt-12  w-full h-full py-4'>
 
+            <div className='flex justify-center items-center w-full gap-x-4 py-2 px-4 text-center'>
+              <label htmlFor="berkan" className='text-primary-color font-semibold text-[17px] w-full'>Olasılık</label>
             </div>
+            <div className='flex justify-center items-center bg-[#D9D9D9] py-2 px-4 gap-x-4 text-center'>
+              <label htmlFor="berkan" className='text-primary-color font-semibold text-[17px] w-full'>Logaritma</label>
+            </div>
+            <div className='flex justify-center items-center  py-2 px-4 gap-x-4 text-center'>
+              <label htmlFor="berkan" className='text-primary-color font-semibold text-[17px] w-full'>İntegral</label>
+            </div>
+            <div className='flex justify-center items-center bg-[#D9D9D9] py-2 px-4 gap-x-4 text-center'>
+              <label htmlFor="berkan" className='text-primary-color font-semibold text-[17px] w-full'>Türev</label>
+            </div>
+            <div className='flex justify-center items-center  py-2 px-4 gap-x-4 text-center'>
+              <label htmlFor="berkan" className='text-primary-color font-semibold text-[17px] w-full'>Türev</label>
+            </div>
+            <div className='flex justify-center items-center bg-[#D9D9D9] py-2 px-4 gap-x-4 text-center'>
+              <label htmlFor="berkan" className='text-primary-color font-semibold text-[17px] w-full'>Logaritma</label>
+            </div>
+
           </div>
 
         </div>
       </div>
+
+    </div >
+      </div >
     </>
   )
 }
