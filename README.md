@@ -21,4 +21,4 @@ eylul@ekin  | 123           | 123
 
 ### Görseller
 -------------------------
-![](https://ozmberkan.github.io/easycourse/src/assets/hauwei.png)
+![](src/assets/huawei.jpg)
