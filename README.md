@@ -18,3 +18,7 @@ Kullanıcı Adları  | Parolalar | Eğitmen kodu
 berkan@ozmen  | 123           | -
 serkan@alici  | 123           | 123
 eylul@ekin  | 123           | 123
+
+### Görseller
+-------------------------
+![](https://ozmberkan.github.io/easycourse/src/assets/hauwei.png)
