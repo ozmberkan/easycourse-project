@@ -21,4 +21,11 @@ eylul@ekin  | 123           | 123
 
 ### Görseller
 -------------------------
-![](src/assets/huawei.jpg)
+![](src/assets/ReadmePhotos1.png)
+-------------------------
+![](src/assets/ReadmePhotos2.png)
+------------------------
+![](src/assets/ReadmePhotos3.png)
+-------------------------
+![](src/assets/ReadmePhotos4.png)
+------------------------
