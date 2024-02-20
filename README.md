@@ -1,7 +1,7 @@
-# easycourse
+# easycourse v1.0
+Şu anda v1.0 a sahiptir, ancak sürekli olarak güncellenmektedir.
 
-# Student MEET
-# Teacher MEET
-# Student Profile
-# Teacher Profile / ProfileTwo
-# Teacher Rate + TeacherRateTwo
+
+Easycourse, bir eğitmen ile öğrencinin ortak noktasıdır. Birbirleri ile iletişime geçip ders işleyebilir,tartışabilir ve sohbet edilebilirler.
+Easycourse şu anda tam olarak işlev görmese de UI/UX alanında gayet başarılıdır.
+Easycourse içerisinde 100'den fazla eğitmene ve 20’den fazla eğitim dalına anında erişebilir, kolayca öğrenebilirsin.
